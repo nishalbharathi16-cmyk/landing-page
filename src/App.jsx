@@ -7,6 +7,7 @@ import { CurriculumSection } from './components/CurriculumSection';
 import { LearningExperience } from './components/landing/LearningExperience';
 import { WhoShouldJoin } from './components/landing/WhoShouldJoin';
 import { ProgrammeOutcomes } from './components/landing/ProgrammeOutcomes';
+import { MentorsSection } from './components/MentorsSection';
 import { ConversionSection } from './components/landing/ConversionSection';
 import { LandingFooter } from './components/landing/LandingFooter';
 import { StickyConversionBar } from './components/StickyConversionBar';
@@ -31,15 +32,15 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#121211] text-[#F6F2E9] flex flex-col font-sans selection:bg-[#C87549]/30 selection:text-white overflow-x-hidden">
+    <div className="min-h-screen bg-[#F5F1E8] text-[#14243A] flex flex-col font-sans selection:bg-[#C5A46D]/25 selection:text-[#14243A] overflow-x-hidden">
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-[#1C1A18] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white border border-white/20"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-[#14243A] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white border border-[#C5A46D]"
       >
         Skip to main content
       </a>
 
-      {/* 1. Minimal Navigation Header with Curriculum & Mentors Headings */}
+      {/* 1. Navigation Header */}
       <LandingNavbar onApplyClick={scrollToApply} />
 
       <main id="main-content" className="flex-1">
@@ -64,11 +65,14 @@ export default function App() {
         {/* 7. Programme Outcomes */}
         <ProgrammeOutcomes onApplyClick={scrollToApply} />
 
-        {/* 8. Final Conversion Section (Short Enquiry Form) */}
+        {/* 8. Mentors Section (Executive Practitioner Faculty) */}
+        <MentorsSection onApplyClick={scrollToApply} />
+
+        {/* 9. Final Conversion Section (Admissions Enquiry Form) */}
         <ConversionSection selectedTrack={selectedTrack} />
       </main>
 
-      {/* 10. Minimal Footer */}
+      {/* 10. Executive Footer */}
       <LandingFooter />
 
       {/* Floating Sticky Conversion Bar */}

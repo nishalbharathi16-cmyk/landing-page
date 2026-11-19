@@ -51,31 +51,27 @@ export function WhyLama({ onApplyClick }) {
   return (
     <section
       id="why-lama"
-      className="relative overflow-hidden border-b border-white/10 bg-[#161615] py-20 sm:py-24 lg:py-28 text-white"
+      className="relative overflow-hidden border-b border-[#E5DFD3] bg-white py-20 sm:py-24 lg:py-28 text-[#14243A]"
     >
-      {/* Background Subtle Gradient & Grid Accents */}
-      <div className="absolute inset-0 z-0 bg-radial from-[#222220]/40 via-transparent to-[#111110] pointer-events-none" />
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#C87549]/40 to-transparent" />
-
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Section Header: The Transition Gap */}
         <Reveal>
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-6 border-b border-white/10">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-6 border-b border-[#E5DFD3]">
             <div className="max-w-2xl">
               <div className="flex items-center gap-2.5 mb-3">
-                <span className="w-6 h-px bg-[#C87549]" />
-                <span className="text-xs font-sans font-semibold uppercase tracking-[0.2em] text-[#C87549]">
+                <span className="w-6 h-px bg-[#C5A46D]" />
+                <span className="text-xs font-sans font-semibold uppercase tracking-[0.2em] text-[#C5A46D]">
                   The Academic-to-Managerial Gap
                 </span>
               </div>
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.12] tracking-tight text-[#F6F2E9]">
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.12] tracking-tight text-[#14243A]">
                 Why LAMA? <br />
-                <span className="text-[#C87549] font-serif italic font-normal">
+                <span className="text-[#C5A46D] font-serif italic font-normal">
                   Bridging Theory &amp; Real-World Command.
                 </span>
               </h2>
-              <p className="mt-4 text-base sm:text-lg leading-relaxed text-zinc-300 font-sans">
+              <p className="mt-4 text-base sm:text-lg leading-relaxed text-[#626B78] font-sans">
                 University degrees provide foundational knowledge and technical mastery. But stepping into a first managerial role introduces an immediate reality shift: you are no longer evaluated on individual effort alone, but on team performance, operational budgets, and commercial impact.
               </p>
             </div>
@@ -83,7 +79,7 @@ export function WhyLama({ onApplyClick }) {
             <button
               type="button"
               onClick={onApplyClick}
-              className="inline-flex items-center gap-2 bg-[#C87549] hover:bg-[#AD5E34] text-white px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.14em] transition-all rounded-lg shrink-0 self-start lg:self-auto shadow-md hover:scale-105 active:scale-95 cursor-pointer font-sans"
+              className="inline-flex items-center gap-2 bg-[#C5A46D] hover:bg-[#B08E55] text-white px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.14em] transition-all rounded-lg shrink-0 self-start lg:self-auto shadow-sm hover:scale-105 active:scale-95 cursor-pointer font-sans"
             >
               <span>Explore Admissions</span>
               <ArrowRight size={14} />
@@ -98,41 +94,41 @@ export function WhyLama({ onApplyClick }) {
             return (
               <Reveal key={item.number} delay={idx * 0.08}>
                 <div
-                  className="group relative flex h-full flex-col justify-between rounded-xl border border-white/10 bg-[#191918] p-7 sm:p-9 transition-all duration-300 hover:-translate-y-1 hover:border-[#C87549]/40 shadow-lg"
+                  className="group relative flex h-full flex-col justify-between rounded-xl border border-[#E5DFD3] bg-[#F5F1E8] p-7 sm:p-9 transition-all duration-300 hover:-translate-y-1 hover:border-[#C5A46D] shadow-xs hover:shadow-md"
                 >
                   <div>
                     {/* Top Header Badge & Number */}
-                    <div className="flex items-center justify-between border-b border-white/10 pb-4">
-                      <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-sans font-medium uppercase tracking-wider border border-white/10 bg-white/[0.04] text-stone-200">
-                        <span className="text-[#C87549] font-bold">{item.number}</span>
-                        <span className="text-white/30">&bull;</span>
+                    <div className="flex items-center justify-between border-b border-[#E5DFD3] pb-4">
+                      <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-sans font-medium uppercase tracking-wider border border-[#E5DFD3] bg-white text-[#14243A] shadow-2xs">
+                        <span className="text-[#C5A46D] font-bold">{item.number}</span>
+                        <span className="text-[#626B78]/40">&bull;</span>
                         <span>{item.category}</span>
                       </span>
 
                       <div
-                        className="w-10 h-10 rounded-lg flex items-center justify-center border border-white/10 bg-white/5 text-[#C87549] transition-transform duration-300 group-hover:scale-105 group-hover:bg-[#C87549]/10"
+                        className="w-10 h-10 rounded-lg flex items-center justify-center border border-[#E5DFD3] bg-white text-[#C5A46D] shadow-2xs transition-transform duration-300 group-hover:scale-105"
                       >
                         <Icon size={18} />
                       </div>
                     </div>
 
                     {/* Card Title */}
-                    <h3 className="mt-6 font-serif text-xl sm:text-2xl font-bold text-[#F6F2E9] leading-snug group-hover:text-white transition-colors">
+                    <h3 className="mt-6 font-serif text-xl sm:text-2xl font-bold text-[#14243A] leading-snug transition-colors">
                       {item.title}
                     </h3>
                     
                     {/* Summary */}
-                    <p className="mt-3.5 text-xs sm:text-sm leading-relaxed text-zinc-300 font-sans">
+                    <p className="mt-3.5 text-xs sm:text-sm leading-relaxed text-[#626B78] font-sans">
                       {item.summary}
                     </p>
 
                     {/* Scannable Checkmark Points with Bold Key Terms */}
-                    <ul className="mt-6 space-y-3 border-t border-white/10 pt-5 text-xs text-zinc-200">
+                    <ul className="mt-6 space-y-3 border-t border-[#E5DFD3] pt-5 text-xs text-[#626B78]">
                       {item.bullets.map((b, bIdx) => (
                         <li key={b} className="flex items-start gap-2.5">
-                          <Check size={14} className="shrink-0 mt-0.5 text-[#C87549]" />
+                          <Check size={14} className="shrink-0 mt-0.5 text-[#C5A46D]" />
                           <span className="leading-relaxed font-sans">
-                            <strong className="text-white font-medium">{item.boldWords[bIdx]}:</strong>{' '}
+                            <strong className="text-[#14243A] font-medium">{item.boldWords[bIdx]}:</strong>{' '}
                             {b.replace(/^[^:]*:\s*/, '')}
                           </span>
                         </li>

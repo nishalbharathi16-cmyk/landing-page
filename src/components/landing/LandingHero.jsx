@@ -43,18 +43,12 @@ export function LandingHero({ onApplyClick }) {
   return (
     <section
       id="home"
-      className="relative overflow-hidden border-b border-[#20201E]/25 bg-[#141413] min-h-[580px] lg:min-h-[660px] flex flex-col justify-between"
+      className="relative overflow-hidden border-b border-[#E5DFD3] bg-[#F5F1E8] min-h-[580px] lg:min-h-[660px] flex flex-col justify-between"
     >
-      {/* Background Layer: Atmospheric Warm Slate & Training Hall Vignette */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="/images/hero-training.jpg"
-          alt="LAMA Executive Training Hall"
-          className="h-full w-full object-cover object-center filter brightness-[0.24] contrast-[1.14] scale-105"
-        />
-        {/* Soft Dark Ambient Gradients */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#111110] via-[#111110]/80 to-[#111110]/95" />
-        <div className="absolute inset-0 bg-radial from-transparent via-[#141413]/55 to-[#111110]/95" />
+      {/* Background Layer: Subtle Warm Ambient Glow */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute top-0 right-1/4 w-96 h-96 rounded-full bg-gradient-to-br from-[#C5A46D]/15 to-transparent blur-3xl" />
+        <div className="absolute bottom-0 left-10 w-80 h-80 rounded-full bg-gradient-to-tr from-[#526B8C]/10 to-transparent blur-2xl" />
       </div>
 
       {/* Main 2-Column Hero Content with Reduced Top Gap */}
@@ -62,26 +56,20 @@ export function LandingHero({ onApplyClick }) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
           {/* ==================== LEFT COLUMN: HEADLINE, DESCRIPTION & CTAs ==================== */}
-          <div className="lg:col-span-6 space-y-6 text-white text-left relative">
-            {/* Subtle Cinematic Ambient Glow */}
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute -top-12 -left-12 w-72 h-72 rounded-full bg-radial from-[#C87549]/20 to-transparent blur-3xl -z-10"
-            />
-
+          <div className="lg:col-span-6 space-y-6 text-left relative">
             <Reveal delay={0}>
               {/* Category Eyebrow */}
               <div className="flex items-center gap-3">
-                <span className="h-px w-8 bg-[#C87549]" />
-                <span className="text-xs font-sans font-semibold uppercase tracking-[0.2em] text-[#C87549]">
+                <span className="h-px w-8 bg-[#C5A46D]" />
+                <span className="text-xs font-sans font-semibold uppercase tracking-[0.2em] text-[#C5A46D]">
                   Executive Leadership &amp; Managerial Skills
                 </span>
               </div>
 
-              {/* Monumental Headline */}
-              <h1 className="mt-3.5 font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.45rem] font-bold leading-[1.1] tracking-tight text-[#F6F2E9]">
+              {/* Monumental Headline in Deep Navy */}
+              <h1 className="mt-3.5 font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.45rem] font-bold leading-[1.1] tracking-tight text-[#14243A]">
                 From Graduate to <br />
-                <span className="text-[#C87549] font-serif italic font-normal">
+                <span className="text-[#C5A46D] font-serif italic font-normal">
                   First-Time Manager.
                 </span>
               </h1>
@@ -89,23 +77,23 @@ export function LandingHero({ onApplyClick }) {
 
             <Reveal delay={0.06}>
               {/* Tagline Quotation */}
-              <p className="border-l-2 border-[#C87549] pl-4 font-serif text-base sm:text-lg lg:text-[1.18rem] italic text-[#F6F2E9] leading-relaxed tracking-wide drop-shadow-xs">
+              <p className="border-l-2 border-[#C5A46D] pl-4 font-serif text-base sm:text-lg lg:text-[1.18rem] italic text-[#14243A] leading-relaxed tracking-wide">
                 &ldquo;{ACADEMY_TAGLINE}&rdquo;
               </p>
 
-              {/* High-Readability Description with Improved Spacing */}
-              <p className="mt-4 sm:mt-5 text-[15px] sm:text-base lg:text-[16.5px] text-[#E4E2DC] leading-[1.7] font-sans max-w-xl font-normal">
+              {/* High-Readability Description in Slate Gray */}
+              <p className="mt-4 sm:mt-5 text-[15px] sm:text-base lg:text-[16.5px] text-[#626B78] leading-[1.7] font-sans max-w-xl font-normal">
                 An applied finishing academy designed to help final-year engineering and MBA students bridge the gap between academic theory and real-world managerial responsibilities through live crisis simulations, financial fluency, and leadership development.
               </p>
             </Reveal>
 
             <Reveal delay={0.12}>
-              {/* Dual Prominent Conversion Buttons with Gentle Hover Interaction */}
+              {/* Dual Prominent Conversion Buttons */}
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4">
                 <button
                   type="button"
                   onClick={onApplyClick}
-                  className="inline-flex items-center justify-center gap-2 bg-[#C87549] hover:bg-[#AD5E34] text-white px-8 py-4 text-xs font-semibold uppercase tracking-[0.14em] transition-all duration-300 shadow-md hover:-translate-y-0.5 active:translate-y-0 cursor-pointer rounded-lg font-sans"
+                  className="inline-flex items-center justify-center gap-2 bg-[#C5A46D] hover:bg-[#B08E55] text-white px-8 py-4 text-xs font-semibold uppercase tracking-[0.14em] transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 cursor-pointer rounded-lg font-sans"
                 >
                   <span>Apply for 2026 Intake</span>
                   <ArrowRight size={14} />
@@ -114,9 +102,9 @@ export function LandingHero({ onApplyClick }) {
                 <button
                   type="button"
                   onClick={scrollToProgramme}
-                  className="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/20 hover:border-[#C87549] text-white px-7 py-4 text-xs font-semibold uppercase tracking-[0.14em] transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer rounded-lg font-sans"
+                  className="inline-flex items-center justify-center gap-2 bg-white hover:bg-[#F5F1E8] border border-[#E5DFD3] hover:border-[#C5A46D] text-[#14243A] px-7 py-4 text-xs font-semibold uppercase tracking-[0.14em] transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer rounded-lg font-sans shadow-2xs"
                 >
-                  <Compass size={14} className="text-[#C87549]" />
+                  <Compass size={14} className="text-[#C5A46D]" />
                   <span>Explore Programme</span>
                 </button>
               </div>
@@ -125,12 +113,6 @@ export function LandingHero({ onApplyClick }) {
 
           {/* ==================== RIGHT COLUMN: LARGE AUTHENTIC CLASSROOM PHOTOGRAPH ==================== */}
           <div className="lg:col-span-6 relative">
-            {/* Soft Ambient Warmth */}
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute -top-12 -right-12 w-80 sm:w-96 lg:w-[420px] h-80 sm:h-96 lg:h-[420px] rounded-full bg-radial from-[#C87549]/20 via-transparent to-transparent blur-3xl -z-10"
-            />
-
             <Reveal delay={0.15}>
               <div
                 ref={photoCardRef}
@@ -140,33 +122,23 @@ export function LandingHero({ onApplyClick }) {
                   transform: cardTransform || 'perspective(1000px) rotateX(0deg) rotateY(0deg)',
                   transition: cardTransform ? 'none' : 'transform 0.5s ease-out',
                 }}
-                className="relative rounded-2xl bg-[#161614] border border-white/15 p-2 sm:p-2.5 shadow-[0_20px_50px_rgba(0,0,0,0.55)] group overflow-hidden hover:border-white/25 transition-colors duration-500"
+                className="relative rounded-2xl bg-white border border-[#E5DFD3] p-3 sm:p-3.5 shadow-xl group overflow-hidden hover:border-[#C5A46D]/60 transition-colors duration-500"
               >
-                {/* Specular Interactive Hover Glare */}
-                <div
-                  aria-hidden="true"
-                  className="pointer-events-none absolute inset-0 z-30 transition-opacity duration-300"
-                  style={{
-                    opacity: glarePos.opacity,
-                    background: `radial-gradient(circle 350px at ${glarePos.x}% ${glarePos.y}%, rgba(255,255,255,0.18), transparent 70%)`,
-                  }}
-                />
-
                 {/* Top Badge: Learning in Action */}
-                <div className="absolute top-5 left-5 z-20 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/85 backdrop-blur-md border border-white/20 text-white font-sans text-[11px] shadow-md">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#C87549]" />
+                <div className="absolute top-5 left-5 z-20 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-[#E5DFD3] text-[#14243A] font-sans text-[11px] font-medium shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#C5A46D]" />
                   <span>Learning in Action</span>
                 </div>
 
                 {/* The Large Authentic LAMA Classroom Photograph */}
-                <div className="relative overflow-hidden rounded-xl border border-white/10 bg-black">
+                <div className="relative overflow-hidden rounded-xl border border-[#E5DFD3] bg-[#F5F1E8]">
                   <AcademyImage
                     src="/images/hero-training.jpg"
                     alt="LAMA Executive Training Session in Anna Nagar, Chennai"
                     slotTitle="LAMA Executive Classroom Training"
                     aspectClassName="aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3]"
                     objectPositionClassName="object-[center_20%]"
-                    className="w-full h-full object-cover filter brightness-[1.02] contrast-[1.03] transition-transform duration-700 group-hover:scale-[1.02]"
+                    className="w-full h-full object-cover filter contrast-[1.02] transition-transform duration-700 group-hover:scale-[1.02]"
                     priority
                   />
                 </div>
@@ -179,7 +151,7 @@ export function LandingHero({ onApplyClick }) {
       </div>
 
       {/* Subtle Bottom Academy Ribbon */}
-      <div className="relative z-30 bg-[#0B0F19] border-t border-white/15 py-3 text-center text-xs text-zinc-400">
+      <div className="relative z-30 bg-white border-t border-[#E5DFD3] py-3 text-center text-xs text-[#626B78]">
         <p className="font-sans text-[11px] tracking-wider uppercase">
           LAMA &bull; Leadership &amp; Managerial Skills Academy &bull; Chennai &ndash; 600040 &bull; Admissions: +91 93630 13960
         </p>

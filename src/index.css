@@ -8,9 +8,9 @@
   }
 
   body {
-    background-color: #F6F2E9;
-    color: #20201E;
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #F5F1E8;
+    color: #14243A;
+    font-family: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -29,14 +29,14 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #F6F2E9;
+  background: #F5F1E8;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #D9D2C5;
+  background: #E5DFD3;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #C87549;
+  background: #C5A46D;
 }

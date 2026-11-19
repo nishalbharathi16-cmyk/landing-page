@@ -11,7 +11,7 @@ export function LandingNavbar({ onApplyClick }) {
       setScrolled(window.scrollY > 20);
 
       // Simple active link spy
-      const sections = ['home', 'why-lama', 'programme', 'curriculum', 'experience', 'apply'];
+      const sections = ['home', 'why-lama', 'programme', 'curriculum', 'experience', 'mentors', 'apply'];
       const scrollPos = window.scrollY + 120;
       for (const sectionId of sections) {
         const el = document.getElementById(sectionId);
@@ -36,6 +36,7 @@ export function LandingNavbar({ onApplyClick }) {
     { label: 'Programme', href: '#programme', id: 'programme' },
     { label: 'Curriculum', href: '#curriculum', id: 'curriculum' },
     { label: 'Learning Experience', href: '#experience', id: 'experience' },
+    { label: 'Mentors', href: '#mentors', id: 'mentors' },
     { label: 'Contact & Apply', href: '#apply', id: 'apply' },
   ];
 
@@ -51,16 +52,16 @@ export function LandingNavbar({ onApplyClick }) {
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-[#121211]/95 backdrop-blur-md border-b border-white/10 shadow-[0_6px_24px_rgba(0,0,0,0.5)]'
-          : 'bg-[#141413] border-b border-white/8'
+          ? 'bg-white/95 backdrop-blur-md border-b border-[#E5DFD3] shadow-sm'
+          : 'bg-[#F5F1E8] border-b border-[#E5DFD3]'
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 sm:gap-6 px-3.5 py-2.5 sm:px-6 lg:px-8">
         
-        {/* Brand Logo inside a Refined Institutional Cream Badge */}
+        {/* Brand Logo inside a Refined White Badge */}
         <a
           href="#home"
-          className="group flex items-center shrink-0 bg-[#F6F2E9] px-2.5 py-1 rounded-lg border border-[#D8D2C6]/60 transition-all shadow-xs hover:border-[#D4AF37]/50"
+          className="group flex items-center shrink-0 bg-white px-3 py-1.5 rounded-lg border border-[#E5DFD3] transition-all shadow-xs hover:border-[#C5A46D]/60"
           aria-label="LAMA – Leadership & Managerial Skills Academy"
         >
           <img
@@ -72,10 +73,10 @@ export function LandingNavbar({ onApplyClick }) {
           />
         </a>
 
-        {/* High-Contrast Navigation Links (Hidden on Mobile/Tablet, visible on Desktop) */}
+        {/* High-Contrast Deep Navy Navigation Links */}
         <nav
           aria-label="Primary Landing Navigation"
-          className="hidden lg:flex items-center gap-7 lg:gap-8 text-[13px] font-semibold tracking-wide text-zinc-300"
+          className="hidden lg:flex items-center gap-6 xl:gap-8 text-[13px] font-medium tracking-wide text-[#14243A]"
         >
           {navLinks.map((link) => {
             const isActive = activeSection === link.id;
@@ -88,12 +89,12 @@ export function LandingNavbar({ onApplyClick }) {
                   handleLinkClick(link.href);
                 }}
                 className={`py-1.5 transition-colors relative font-sans ${
-                  isActive ? 'text-[#C87549]' : 'text-zinc-300 hover:text-[#C87549]'
+                  isActive ? 'text-[#C5A46D] font-semibold' : 'text-[#14243A] hover:text-[#C5A46D]'
                 }`}
               >
                 {link.label}
                 {isActive && (
-                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#C87549] rounded-full" />
+                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#C5A46D] rounded-full" />
                 )}
               </a>
             );
@@ -104,17 +105,17 @@ export function LandingNavbar({ onApplyClick }) {
         <div className="flex items-center gap-2 sm:gap-4">
           <a
             href="tel:+919363013960"
-            className="hidden xl:inline-flex items-center gap-1.5 text-xs font-semibold text-zinc-300 hover:text-[#C87549] transition-colors font-sans"
+            className="hidden xl:inline-flex items-center gap-1.5 text-xs font-semibold text-[#14243A] hover:text-[#C5A46D] transition-colors font-sans"
           >
-            <Phone size={13} className="text-[#C87549]" />
+            <Phone size={13} className="text-[#C5A46D]" />
             <span>+91 93630 13960</span>
           </a>
 
-          {/* Prominent Apply Now CTA */}
+          {/* Prominent Apply Now CTA Button */}
           <button
             type="button"
             onClick={onApplyClick}
-            className="inline-flex items-center justify-center gap-1.5 bg-[#C87549] hover:bg-[#AD5E34] text-white px-3.5 sm:px-5 py-2 sm:py-2.5 text-[11px] sm:text-xs font-semibold uppercase tracking-[0.12em] transition-all shadow-md hover:scale-105 active:scale-95 rounded-md cursor-pointer shrink-0 font-sans"
+            className="inline-flex items-center justify-center gap-1.5 bg-[#C5A46D] hover:bg-[#B08E55] text-white px-3.5 sm:px-5 py-2 sm:py-2.5 text-[11px] sm:text-xs font-semibold uppercase tracking-[0.12em] transition-all shadow-sm hover:scale-105 active:scale-95 rounded-lg cursor-pointer shrink-0 font-sans"
           >
             <span>Apply Now</span>
             <ArrowRight size={12} />
@@ -124,7 +125,7 @@ export function LandingNavbar({ onApplyClick }) {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-zinc-300 hover:text-white transition-colors rounded-md border border-white/15 bg-white/5 shrink-0"
+            className="lg:hidden p-2 text-[#14243A] hover:text-[#C5A46D] transition-colors rounded-lg border border-[#E5DFD3] bg-white shadow-xs shrink-0 cursor-pointer"
             aria-label="Toggle Navigation Menu"
           >
             {mobileMenuOpen ? <X size={18} /> : <Menu size={18} />}
@@ -135,7 +136,7 @@ export function LandingNavbar({ onApplyClick }) {
 
       {/* Enhanced Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-b border-white/15 bg-[#161614] px-5 py-5 space-y-3.5 shadow-2xl animate-in slide-in-from-top-2 duration-200">
+        <div className="lg:hidden border-b border-[#E5DFD3] bg-white px-5 py-5 space-y-3 shadow-xl animate-in slide-in-from-top-2 duration-200">
           {navLinks.map((link) => (
             <a
               key={link.label}
@@ -144,7 +145,7 @@ export function LandingNavbar({ onApplyClick }) {
                 e.preventDefault();
                 handleLinkClick(link.href);
               }}
-              className="block text-sm font-semibold text-zinc-200 hover:text-[#C87549] py-2 border-b border-white/10 font-sans"
+              className="block text-sm font-medium text-[#14243A] hover:text-[#C5A46D] py-2 border-b border-[#E5DFD3]/60 font-sans"
             >
               {link.label}
             </a>
@@ -152,9 +153,9 @@ export function LandingNavbar({ onApplyClick }) {
           <div className="pt-3 flex flex-col gap-3">
             <a
               href="tel:+919363013960"
-              className="flex items-center gap-2 text-xs font-semibold text-zinc-300 py-1"
+              className="flex items-center gap-2 text-xs font-semibold text-[#14243A] py-1"
             >
-              <Phone size={14} className="text-[#C87549]" />
+              <Phone size={14} className="text-[#C5A46D]" />
               <span>Admissions: +91 93630 13960</span>
             </a>
             <button
@@ -163,7 +164,7 @@ export function LandingNavbar({ onApplyClick }) {
                 setMobileMenuOpen(false);
                 if (onApplyClick) onApplyClick();
               }}
-              className="w-full inline-flex items-center justify-center gap-2 bg-[#C87549] hover:bg-[#AD5E34] text-white py-3 text-xs font-bold uppercase tracking-wider rounded-md"
+              className="w-full inline-flex items-center justify-center gap-2 bg-[#C5A46D] hover:bg-[#B08E55] text-white py-3 text-xs font-semibold uppercase tracking-wider rounded-lg shadow-sm"
             >
               <span>Apply for 2026 Intake</span>
               <ArrowRight size={13} />
