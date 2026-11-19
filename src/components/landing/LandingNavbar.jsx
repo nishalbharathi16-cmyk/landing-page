@@ -57,7 +57,7 @@ export function LandingNavbar({ onApplyClick }) {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 sm:gap-6 px-3.5 py-2 sm:px-6 lg:px-8">
         
-        {/* Brand Logo with Refined Responsive Sizing (Max 38px on Mobile) */}
+        {/* Brand Logo with Refined Responsive Sizing (Prominent on Mobile & Desktop) */}
         <a
           href="#home"
           className="group flex items-center shrink-0 py-0.5"
@@ -66,7 +66,7 @@ export function LandingNavbar({ onApplyClick }) {
           <img
             src="/images/lama-logo.jpg"
             alt="LAMA – Leadership & Managerial Skills Academy"
-            className="h-9 sm:h-11 lg:h-13 w-auto max-h-[38px] sm:max-h-[46px] lg:max-h-[52px] object-contain transition-transform group-hover:scale-[1.01]"
+            className="h-12 sm:h-14 lg:h-16 w-auto max-h-[48px] sm:max-h-[54px] lg:max-h-[64px] object-contain transition-transform group-hover:scale-[1.01]"
             loading="eager"
             decoding="async"
           />
