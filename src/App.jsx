@@ -31,10 +31,10 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F6F2E9] text-[#20201E] flex flex-col font-sans selection:bg-[#C87549]/20 selection:text-[#20201E]">
+    <div className="min-h-screen bg-[#121211] text-[#F6F2E9] flex flex-col font-sans selection:bg-[#C87549]/30 selection:text-white overflow-x-hidden">
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-[#20201E] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-[#1C1A18] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white border border-white/20"
       >
         Skip to main content
       </a>
