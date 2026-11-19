@@ -81,7 +81,7 @@ export function CurriculumSection({ activeDomainId, setActiveDomainId }) {
               <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.12] tracking-tight text-[#F6F2E9]">
                 Develop the Capabilities <br />
                 <span className="text-[#C87549] font-serif italic font-normal">
-                  Modern First-Time Managers Need.
+                  That Modern Today&apos;s VUCA Business Managers Need.
                 </span>
               </h2>
               <p className="mt-3.5 text-base sm:text-lg leading-relaxed text-zinc-300 font-sans">
