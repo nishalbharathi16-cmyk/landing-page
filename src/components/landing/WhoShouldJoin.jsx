@@ -71,10 +71,10 @@ export function WhoShouldJoin({ onSelectTrack }) {
                   Cohort Pathways &bull; 2026 Admissions
                 </span>
               </div>
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.12] tracking-tight text-white">
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.12] tracking-tight text-[#F6F2E9]">
                 Who Should Join? <br />
-                <span className="bg-gradient-to-r from-[#F6F2E9] via-[#D4AF37] to-[#C87549] bg-clip-text text-transparent font-serif italic font-normal">
-                  Two Specialized Leadership Tracks.
+                <span className="text-[#C87549] font-serif italic font-normal">
+                  Two Specialized Leadership Pathways.
                 </span>
               </h2>
               <p className="mt-3.5 text-base sm:text-lg leading-relaxed text-zinc-200 font-sans">
@@ -83,7 +83,7 @@ export function WhoShouldJoin({ onSelectTrack }) {
             </div>
 
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/15 text-xs font-mono text-zinc-200 self-start md:self-auto">
-              <span className="w-2 h-2 rounded-full bg-[#10B981] animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-[#10B981]" />
               <span>Cohorts Capped at 24 Seats</span>
             </div>
           </div>
@@ -94,31 +94,8 @@ export function WhoShouldJoin({ onSelectTrack }) {
           {tracks.map((track, idx) => (
             <Reveal key={track.id} delay={idx * 0.1}>
               <article
-                className="group relative flex h-full flex-col justify-between rounded-xl border border-white/15 bg-black/50 backdrop-blur-xl p-3 sm:p-4 shadow-xl transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_25px_60px_rgba(0,0,0,0.7)] overflow-hidden"
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = `${track.color}60`;
-                  e.currentTarget.style.boxShadow = `0 25px 60px rgba(0,0,0,0.7), 0 0 35px ${track.color}18`;
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.15)';
-                  e.currentTarget.style.boxShadow = 'none';
-                }}
+                className="group relative flex h-full flex-col justify-between rounded-xl border border-white/12 bg-[#1A1A18] p-3 sm:p-3.5 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-white/25 overflow-hidden"
               >
-                {/* Top Ambient Color Accent Strip */}
-                <div
-                  aria-hidden="true"
-                  className="absolute top-0 inset-x-0 h-1 transition-opacity duration-300 opacity-70 group-hover:opacity-100"
-                  style={{
-                    background: `linear-gradient(90deg, transparent, ${track.color}, transparent)`,
-                  }}
-                />
-
-                {/* Brass Corner Brackets */}
-                <div aria-hidden="true" className="pointer-events-none absolute top-2.5 left-2.5 w-3.5 h-3.5 border-t-2 border-l-2 border-[#D4AF37] z-20 group-hover:scale-105 transition-transform" />
-                <div aria-hidden="true" className="pointer-events-none absolute top-2.5 right-2.5 w-3.5 h-3.5 border-t-2 border-r-2 border-[#D4AF37] z-20 group-hover:scale-105 transition-transform" />
-                <div aria-hidden="true" className="pointer-events-none absolute bottom-2.5 left-2.5 w-3.5 h-3.5 border-b-2 border-l-2 border-[#D4AF37] z-20 group-hover:scale-105 transition-transform" />
-                <div aria-hidden="true" className="pointer-events-none absolute bottom-2.5 right-2.5 w-3.5 h-3.5 border-b-2 border-r-2 border-[#D4AF37] z-20 group-hover:scale-105 transition-transform" />
-
                 <div>
                   {/* Photo with Hover Zoom */}
                   <div className="overflow-hidden rounded-lg border border-white/10">

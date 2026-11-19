@@ -96,9 +96,9 @@ export function LearningExperience({ onApplyClick }) {
                   Experiential Pedagogy &bull; Four Pillars
                 </span>
               </div>
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.12] tracking-tight text-white">
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.12] tracking-tight text-[#F6F2E9]">
                 Practical Learning <br />
-                <span className="bg-gradient-to-r from-[#F6F2E9] via-[#D4AF37] to-[#C87549] bg-clip-text text-transparent font-serif italic font-normal">
+                <span className="text-[#C87549] font-serif italic font-normal">
                   Beyond the Lecture Hall.
                 </span>
               </h2>
@@ -118,25 +118,19 @@ export function LearningExperience({ onApplyClick }) {
           </div>
         </Reveal>
 
-        {/* Four Pillar Cards with Luxury Glassmorphism & Corner Accents */}
+        {/* Four Pillar Cards */}
         <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {pillars.map((pillar, idx) => {
             const Icon = pillar.icon;
             return (
               <Reveal key={pillar.letter} delay={idx * 0.06}>
                 <div
-                  className={`group relative flex h-full flex-col justify-between rounded-xl border bg-black/45 backdrop-blur-xl p-7 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_20px_45px_rgba(0,0,0,0.6)] ${
+                  className={`group relative flex h-full flex-col justify-between rounded-xl border bg-[#1A1A18] p-7 transition-all duration-300 hover:-translate-y-1 ${
                     pillar.isPrimary
-                      ? 'border-[#C87549]/60 shadow-[0_0_25px_rgba(200,117,73,0.15)]'
-                      : 'border-white/15 hover:border-white/30'
+                      ? 'border-[#C87549]/50 shadow-md'
+                      : 'border-white/12 hover:border-white/25'
                   }`}
                 >
-                  {/* Brass Corner Brackets */}
-                  <div aria-hidden="true" className="pointer-events-none absolute top-2 left-2 w-3 h-3 border-t-2 border-l-2 border-[#D4AF37]/50 group-hover:border-[#D4AF37] transition-colors" />
-                  <div aria-hidden="true" className="pointer-events-none absolute top-2 right-2 w-3 h-3 border-t-2 border-r-2 border-[#D4AF37]/50 group-hover:border-[#D4AF37] transition-colors" />
-                  <div aria-hidden="true" className="pointer-events-none absolute bottom-2 left-2 w-3 h-3 border-b-2 border-l-2 border-[#D4AF37]/50 group-hover:border-[#D4AF37] transition-colors" />
-                  <div aria-hidden="true" className="pointer-events-none absolute bottom-2 right-2 w-3 h-3 border-b-2 border-r-2 border-[#D4AF37]/50 group-hover:border-[#D4AF37] transition-colors" />
-
                   <div>
                     {/* Header */}
                     <div className="flex items-center justify-between border-b border-white/10 pb-4">
@@ -195,18 +189,11 @@ export function LearningExperience({ onApplyClick }) {
           </div>
         </Reveal>
 
-        {/* Editorial Photo Showcase (Authentic LAMA Classrooms with 3D Corner Styling) */}
+        {/* Editorial Photo Showcase */}
         <div className="mt-14 grid grid-cols-1 gap-7 md:grid-cols-3">
           {photos.map((item, pIdx) => (
             <Reveal key={item.title} delay={pIdx * 0.08}>
-              <div className="group relative flex h-full flex-col justify-between rounded-xl border border-white/15 bg-black/50 backdrop-blur-xl p-3 shadow-xl transition-all duration-500 hover:-translate-y-1.5 hover:border-white/30 hover:shadow-[0_20px_50px_rgba(0,0,0,0.7)] overflow-hidden">
-                
-                {/* Brass Corner Brackets */}
-                <div aria-hidden="true" className="pointer-events-none absolute top-2 left-2 w-3.5 h-3.5 border-t-2 border-l-2 border-[#D4AF37] z-20" />
-                <div aria-hidden="true" className="pointer-events-none absolute top-2 right-2 w-3.5 h-3.5 border-t-2 border-r-2 border-[#D4AF37] z-20" />
-                <div aria-hidden="true" className="pointer-events-none absolute bottom-2 left-2 w-3.5 h-3.5 border-b-2 border-l-2 border-[#D4AF37] z-20" />
-                <div aria-hidden="true" className="pointer-events-none absolute bottom-2 right-2 w-3.5 h-3.5 border-b-2 border-r-2 border-[#D4AF37] z-20" />
-
+              <div className="group relative flex h-full flex-col justify-between rounded-xl border border-white/12 bg-[#1A1A18] p-3 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-white/25 overflow-hidden">
                 <div>
                   {/* Photo with Smooth Hover Scale and Uniform Aspect Ratio */}
                   <div className="overflow-hidden rounded-lg border border-white/10">

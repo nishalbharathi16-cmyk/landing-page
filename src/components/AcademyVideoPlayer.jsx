@@ -35,14 +35,8 @@ export function AcademyVideoPlayer({
 
   return (
     <div
-      className={`group relative overflow-hidden rounded-2xl border border-white/20 bg-black/60 shadow-[0_20px_50px_rgba(0,0,0,0.65)] hover:border-[#D4AF37]/50 transition-colors duration-300 ${className}`}
+      className={`group relative overflow-hidden rounded-2xl border border-white/15 bg-[#161614] shadow-[0_20px_50px_rgba(0,0,0,0.65)] hover:border-white/25 transition-colors duration-300 ${className}`}
     >
-      {/* Brass Corner Brackets */}
-      <div aria-hidden="true" className="pointer-events-none absolute top-2.5 left-2.5 w-4 h-4 border-t-2 border-l-2 border-[#D4AF37] z-20" />
-      <div aria-hidden="true" className="pointer-events-none absolute top-2.5 right-2.5 w-4 h-4 border-t-2 border-r-2 border-[#D4AF37] z-20" />
-      <div aria-hidden="true" className="pointer-events-none absolute bottom-2.5 left-2.5 w-4 h-4 border-b-2 border-l-2 border-[#D4AF37] z-20" />
-      <div aria-hidden="true" className="pointer-events-none absolute bottom-2.5 right-2.5 w-4 h-4 border-b-2 border-r-2 border-[#D4AF37] z-20" />
-
       <div className={`relative w-full ${aspectClassName}`}>
         <video
           ref={videoRef}
@@ -71,8 +65,8 @@ export function AcademyVideoPlayer({
           >
             {/* Top Badge */}
             <div className="flex items-center justify-between">
-              <span className="inline-flex items-center gap-2 border border-white/25 bg-black/75 px-3 py-1.5 text-[11px] font-mono font-bold uppercase tracking-[0.16em] text-[#F6F2E9] rounded-full backdrop-blur-md shadow-md">
-                <span className="w-2 h-2 rounded-full bg-[#C87549] animate-pulse" />
+              <span className="inline-flex items-center gap-2 border border-white/20 bg-black/80 px-3 py-1.5 text-[11px] font-mono font-bold uppercase tracking-[0.16em] text-[#F6F2E9] rounded-full backdrop-blur-md shadow-md">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#C87549]" />
                 <span>{badge}</span>
               </span>
               <span className="inline-flex items-center gap-1.5 text-xs font-mono text-zinc-300 bg-black/60 px-3 py-1 rounded-full border border-white/10 backdrop-blur-md">

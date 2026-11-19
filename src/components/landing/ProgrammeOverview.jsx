@@ -80,10 +80,10 @@ export function ProgrammeOverview({ onApplyClick }) {
                   Curriculum Architecture &bull; 3 Domains
                 </span>
               </div>
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.12] tracking-tight text-white">
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.12] tracking-tight text-[#F6F2E9]">
                 Three Core Practice Domains. <br />
-                <span className="bg-gradient-to-r from-[#F6F2E9] via-[#D4AF37] to-[#C87549] bg-clip-text text-transparent font-serif italic font-normal">
-                  The Managerial Decision Triad.
+                <span className="text-[#C87549] font-serif italic font-normal">
+                  The Practical Managerial Framework.
                 </span>
               </h2>
               <p className="mt-3.5 text-base sm:text-lg leading-relaxed text-zinc-200 font-sans">
@@ -102,51 +102,22 @@ export function ProgrammeOverview({ onApplyClick }) {
           </div>
         </Reveal>
 
-        {/* Three Scannable Executive Domains with Distinct Visual Profiles & Elevation */}
+        {/* Three Scannable Executive Domains */}
         <div className="mt-14 grid grid-cols-1 gap-8 lg:grid-cols-3">
           {domains.map((domain, idx) => {
             const Icon = domain.icon;
             return (
               <Reveal key={domain.code} delay={idx * 0.08}>
                 <div
-                  className="group relative flex h-full flex-col justify-between rounded-xl border border-white/15 bg-black/50 backdrop-blur-xl p-7 sm:p-9 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_25px_55px_rgba(0,0,0,0.7)] overflow-hidden"
-                  style={{
-                    borderColor: 'rgba(255, 255, 255, 0.15)',
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = `${domain.color}60`;
-                    e.currentTarget.style.boxShadow = `0 25px 55px rgba(0,0,0,0.7), 0 0 30px ${domain.color}15`;
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.15)';
-                    e.currentTarget.style.boxShadow = 'none';
-                  }}
+                  className="group relative flex h-full flex-col justify-between rounded-xl border border-white/12 bg-[#1A1A18] p-7 sm:p-9 transition-all duration-300 hover:-translate-y-1 hover:border-white/25 shadow-lg overflow-hidden"
                 >
-                  {/* Distinct Top Ambient Color Accent Strip */}
+                  {/* Subtle Top Accent Hairline */}
                   <div
                     aria-hidden="true"
-                    className="absolute top-0 inset-x-0 h-1 transition-opacity duration-300 opacity-70 group-hover:opacity-100"
+                    className="absolute top-0 inset-x-0 h-0.5 opacity-60 group-hover:opacity-100 transition-opacity"
                     style={{
-                      background: `linear-gradient(90deg, transparent, ${domain.color}, transparent)`,
+                      background: domain.color,
                     }}
-                  />
-
-                  {/* Brass Corner Brackets with Color Glow on Hover */}
-                  <div
-                    aria-hidden="true"
-                    className="pointer-events-none absolute top-2.5 left-2.5 w-3.5 h-3.5 border-t-2 border-l-2 border-[#D4AF37]/50 group-hover:border-[#D4AF37] transition-colors"
-                  />
-                  <div
-                    aria-hidden="true"
-                    className="pointer-events-none absolute top-2.5 right-2.5 w-3.5 h-3.5 border-t-2 border-r-2 border-[#D4AF37]/50 group-hover:border-[#D4AF37] transition-colors"
-                  />
-                  <div
-                    aria-hidden="true"
-                    className="pointer-events-none absolute bottom-2.5 left-2.5 w-3.5 h-3.5 border-b-2 border-l-2 border-[#D4AF37]/50 group-hover:border-[#D4AF37] transition-colors"
-                  />
-                  <div
-                    aria-hidden="true"
-                    className="pointer-events-none absolute bottom-2.5 right-2.5 w-3.5 h-3.5 border-b-2 border-r-2 border-[#D4AF37]/50 group-hover:border-[#D4AF37] transition-colors"
                   />
 
                   <div>

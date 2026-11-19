@@ -24,12 +24,12 @@ export function StickyConversionBar({ onApplyClick }) {
       aria-label="Admissions quick conversion bar"
       className="fixed bottom-3 left-3 right-3 sm:bottom-5 sm:left-auto sm:right-6 z-40 max-w-lg w-full transition-all duration-300"
     >
-      <div className="bg-[#20201E]/98 backdrop-blur-md border border-[#F6F2E9]/20 border-t-2 border-t-[#C87549] text-[#F6F2E9] p-3.5 sm:p-4 shadow-2xl flex items-center justify-between gap-3">
+      <div className="bg-[#1A1A18]/98 backdrop-blur-md rounded-xl border border-white/15 border-t-2 border-t-[#C87549] text-[#F6F2E9] p-3.5 sm:p-4 shadow-2xl flex items-center justify-between gap-3">
         <div className="min-w-0">
           <p className="text-xs font-serif font-semibold text-white truncate">
             LAMA 2026 Cohort Admissions
           </p>
-          <p className="text-[11px] text-[#F6F2E9]/75 truncate">
+          <p className="text-[11px] text-zinc-300 truncate">
             Final-Year B.Tech / B.E. &amp; MBA Students
           </p>
         </div>
@@ -38,7 +38,7 @@ export function StickyConversionBar({ onApplyClick }) {
           <button
             type="button"
             onClick={onApplyClick}
-            className="px-4 py-2 bg-[#C87549] hover:bg-[#AD5E34] text-white text-xs font-semibold uppercase tracking-wider transition-colors shadow-xs"
+            className="px-4 py-2 bg-[#C87549] hover:bg-[#AD5E34] text-white text-xs font-semibold uppercase tracking-wider rounded-lg transition-colors shadow-xs"
           >
             Apply Now
           </button>

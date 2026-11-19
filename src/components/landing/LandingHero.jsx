@@ -79,9 +79,9 @@ export function LandingHero({ onApplyClick }) {
               </div>
 
               {/* Monumental Headline */}
-              <h1 className="mt-3.5 font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.45rem] font-bold leading-[1.1] tracking-tight text-white">
+              <h1 className="mt-3.5 font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.45rem] font-bold leading-[1.1] tracking-tight text-[#F6F2E9]">
                 From Graduate to <br />
-                <span className="bg-gradient-to-r from-[#F6F2E9] via-[#D4AF37] to-[#C87549] bg-clip-text text-transparent font-serif italic font-normal">
+                <span className="text-[#C87549] font-serif italic font-normal">
                   First-Time Manager.
                 </span>
               </h1>
@@ -125,14 +125,10 @@ export function LandingHero({ onApplyClick }) {
 
           {/* ==================== RIGHT COLUMN: LARGE AUTHENTIC CLASSROOM PHOTOGRAPH ==================== */}
           <div className="lg:col-span-6 relative">
-            {/* Cinematic Warm Copper / Gold Radial Backlight */}
+            {/* Soft Ambient Warmth */}
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute -top-16 -right-16 w-80 sm:w-96 lg:w-[480px] h-80 sm:h-96 lg:h-[480px] rounded-full bg-radial from-[#C87549]/35 via-[#D4AF37]/20 to-transparent blur-3xl -z-10"
-            />
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute -bottom-10 -left-10 w-64 sm:w-72 h-64 sm:h-72 rounded-full bg-radial from-[#D4AF37]/25 via-[#C87549]/15 to-transparent blur-2xl -z-10"
+              className="pointer-events-none absolute -top-12 -right-12 w-80 sm:w-96 lg:w-[420px] h-80 sm:h-96 lg:h-[420px] rounded-full bg-radial from-[#C87549]/20 via-[#D4AF37]/10 to-transparent blur-3xl -z-10"
             />
 
             <Reveal delay={0.15}>
@@ -144,39 +140,33 @@ export function LandingHero({ onApplyClick }) {
                   transform: cardTransform || 'perspective(1000px) rotateX(0deg) rotateY(0deg)',
                   transition: cardTransform ? 'none' : 'transform 0.5s ease-out',
                 }}
-                className="relative rounded-2xl bg-black/60 backdrop-blur-xl border border-white/20 p-2.5 sm:p-3 shadow-[0_25px_60px_rgba(0,0,0,0.65)] group overflow-hidden hover:border-[#D4AF37]/40 transition-colors duration-500"
+                className="relative rounded-2xl bg-[#161614] border border-white/15 p-2 sm:p-2.5 shadow-[0_20px_50px_rgba(0,0,0,0.55)] group overflow-hidden hover:border-white/25 transition-colors duration-500"
               >
-                {/* Champagne Gold Brass Corner Brackets */}
-                <div aria-hidden="true" className="pointer-events-none absolute top-2.5 left-2.5 w-4 h-4 border-t-2 border-l-2 border-[#D4AF37] z-20" />
-                <div aria-hidden="true" className="pointer-events-none absolute top-2.5 right-2.5 w-4 h-4 border-t-2 border-r-2 border-[#D4AF37] z-20" />
-                <div aria-hidden="true" className="pointer-events-none absolute bottom-2.5 left-2.5 w-4 h-4 border-b-2 border-l-2 border-[#D4AF37] z-20" />
-                <div aria-hidden="true" className="pointer-events-none absolute bottom-2.5 right-2.5 w-4 h-4 border-b-2 border-r-2 border-[#D4AF37] z-20" />
-
                 {/* Specular Interactive Hover Glare */}
                 <div
                   aria-hidden="true"
                   className="pointer-events-none absolute inset-0 z-30 transition-opacity duration-300"
                   style={{
                     opacity: glarePos.opacity,
-                    background: `radial-gradient(circle 350px at ${glarePos.x}% ${glarePos.y}%, rgba(255,255,255,0.22), transparent 70%)`,
+                    background: `radial-gradient(circle 350px at ${glarePos.x}% ${glarePos.y}%, rgba(255,255,255,0.18), transparent 70%)`,
                   }}
                 />
 
                 {/* Top Badge: Learning in Action */}
-                <div className="absolute top-5 left-5 z-20 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/80 backdrop-blur-md border border-white/25 text-white font-mono text-[11px] shadow-lg">
-                  <span className="w-2 h-2 rounded-full bg-[#C87549] animate-pulse" />
+                <div className="absolute top-5 left-5 z-20 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/85 backdrop-blur-md border border-white/20 text-white font-mono text-[11px] shadow-md">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#C87549]" />
                   <span>Learning in Action</span>
                 </div>
 
                 {/* The Large Authentic LAMA Classroom Photograph */}
-                <div className="relative overflow-hidden rounded-xl border border-white/10 bg-black/60">
+                <div className="relative overflow-hidden rounded-xl border border-white/10 bg-black">
                   <AcademyImage
                     src="/images/hero-training.jpg"
                     alt="LAMA Executive Training Session in Anna Nagar, Chennai"
                     slotTitle="LAMA Executive Classroom Training"
                     aspectClassName="aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3]"
                     objectPositionClassName="object-[center_20%]"
-                    className="w-full h-full object-cover filter brightness-[1.02] contrast-[1.04] transition-transform duration-700 group-hover:scale-[1.025]"
+                    className="w-full h-full object-cover filter brightness-[1.02] contrast-[1.03] transition-transform duration-700 group-hover:scale-[1.02]"
                     priority
                   />
                 </div>

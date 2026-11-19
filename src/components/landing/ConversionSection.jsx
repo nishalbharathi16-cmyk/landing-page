@@ -136,19 +136,12 @@ export function ConversionSection({ selectedTrack }) {
           {/* Left Column: Direct High-Converting Form */}
           <div className="lg:col-span-7">
             <Reveal>
-              <div className="relative rounded-2xl border border-white/15 bg-black/55 backdrop-blur-2xl p-7 sm:p-10 shadow-[0_25px_60px_rgba(0,0,0,0.7)] overflow-hidden">
-                
-                {/* Brass Corner Brackets */}
-                <div aria-hidden="true" className="pointer-events-none absolute top-2.5 left-2.5 w-4 h-4 border-t-2 border-l-2 border-[#D4AF37]" />
-                <div aria-hidden="true" className="pointer-events-none absolute top-2.5 right-2.5 w-4 h-4 border-t-2 border-r-2 border-[#D4AF37]" />
-                <div aria-hidden="true" className="pointer-events-none absolute bottom-2.5 left-2.5 w-4 h-4 border-b-2 border-l-2 border-[#D4AF37]" />
-                <div aria-hidden="true" className="pointer-events-none absolute bottom-2.5 right-2.5 w-4 h-4 border-b-2 border-r-2 border-[#D4AF37]" />
-
+              <div className="relative rounded-2xl border border-white/12 bg-[#1A1A18] p-7 sm:p-10 shadow-2xl overflow-hidden">
                 {/* Section Eyebrow & Strong Headline */}
                 <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#D4AF37]">
                   Cohort Intake 2026 &bull; Priority Registration
                 </span>
-                <h2 className="mt-2.5 font-serif text-3xl sm:text-4xl font-bold leading-tight text-white">
+                <h2 className="mt-2.5 font-serif text-3xl sm:text-4xl font-bold leading-tight text-[#F6F2E9]">
                   Your Leadership Journey Starts Here.
                 </h2>
                 <p className="mt-3 text-xs sm:text-sm text-zinc-200 leading-relaxed font-sans">
@@ -429,16 +422,16 @@ export function ConversionSection({ selectedTrack }) {
                       </label>
                     </div>
 
-                    {/* Prominent Submission CTA with Gold Shimmer */}
+                    {/* Prominent Submission CTA */}
                     <div className="pt-2">
                       <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="w-full inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] hover:brightness-110 text-[#171716] py-4 px-8 text-sm font-bold uppercase tracking-[0.14em] rounded-lg transition-all shadow-[0_0_25px_rgba(212,175,55,0.4)] disabled:opacity-70 active:scale-98 cursor-pointer"
+                        className="w-full inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-[#C87549] to-[#AD5E34] hover:brightness-110 text-white py-4 px-8 text-sm font-bold uppercase tracking-[0.14em] rounded-lg transition-all shadow-md hover:shadow-lg disabled:opacity-70 active:scale-98 cursor-pointer"
                       >
                         {isSubmitting ? (
                           <>
-                            <Loader2 className="h-4 w-4 animate-spin text-[#171716]" />
+                            <Loader2 className="h-4 w-4 animate-spin text-white" />
                             <span>Processing Application...</span>
                           </>
                         ) : (
@@ -462,7 +455,7 @@ export function ConversionSection({ selectedTrack }) {
           {/* Right Column: Key Admissions Information & Direct Contact */}
           <div className="lg:col-span-5 space-y-6">
             <Reveal delay={0.1}>
-              <div className="rounded-2xl border border-white/15 bg-black/55 backdrop-blur-2xl p-7 sm:p-8 space-y-6 shadow-xl">
+              <div className="rounded-2xl border border-white/12 bg-[#1A1A18] p-7 sm:p-8 space-y-6 shadow-xl">
                 
                 {/* 1. Programme Delivery */}
                 <div className="flex items-start gap-4">

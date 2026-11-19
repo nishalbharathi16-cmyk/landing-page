@@ -78,10 +78,10 @@ export function WhyLama({ onApplyClick }) {
                   The Academic-to-Managerial Gap
                 </span>
               </div>
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.12] tracking-tight text-white">
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.12] tracking-tight text-[#F6F2E9]">
                 Why LAMA? <br />
-                <span className="bg-gradient-to-r from-[#F6F2E9] via-[#D4AF37] to-[#C87549] bg-clip-text text-transparent font-serif italic font-normal">
-                  The Crucible Between Theory &amp; Executive Command.
+                <span className="text-[#C87549] font-serif italic font-normal">
+                  Bridging Theory &amp; Real-World Command.
                 </span>
               </h2>
               <p className="mt-4 text-base sm:text-lg leading-relaxed text-zinc-200 font-sans">
@@ -100,24 +100,15 @@ export function WhyLama({ onApplyClick }) {
           </div>
         </Reveal>
 
-        {/* 3 Luxury Executive Benefit Cards with Distinct Glow & Brass Detailing */}
+        {/* 3 Executive Architecture Cards */}
         <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-3">
           {valueProps.map((item, idx) => {
             const Icon = item.icon;
             return (
               <Reveal key={item.number} delay={idx * 0.08}>
                 <div
-                  className={`group relative flex h-full flex-col justify-between rounded-xl border border-white/15 bg-black/45 backdrop-blur-xl p-7 sm:p-9 transition-all duration-500 hover:-translate-y-1.5 hover:border-white/30 hover:shadow-[0_20px_50px_rgba(0,0,0,0.6)]`}
-                  style={{
-                    boxShadow: `0 10px 30px rgba(0,0,0,0.5)`,
-                  }}
+                  className="group relative flex h-full flex-col justify-between rounded-xl border border-white/12 bg-[#1A1A18] p-7 sm:p-9 transition-all duration-300 hover:-translate-y-1 hover:border-white/25 shadow-lg"
                 >
-                  {/* Brass Corner Brackets */}
-                  <div aria-hidden="true" className="pointer-events-none absolute top-2.5 left-2.5 w-3.5 h-3.5 border-t-2 border-l-2 border-[#D4AF37]/60 group-hover:border-[#D4AF37] transition-colors" />
-                  <div aria-hidden="true" className="pointer-events-none absolute top-2.5 right-2.5 w-3.5 h-3.5 border-t-2 border-r-2 border-[#D4AF37]/60 group-hover:border-[#D4AF37] transition-colors" />
-                  <div aria-hidden="true" className="pointer-events-none absolute bottom-2.5 left-2.5 w-3.5 h-3.5 border-b-2 border-l-2 border-[#D4AF37]/60 group-hover:border-[#D4AF37] transition-colors" />
-                  <div aria-hidden="true" className="pointer-events-none absolute bottom-2.5 right-2.5 w-3.5 h-3.5 border-b-2 border-r-2 border-[#D4AF37]/60 group-hover:border-[#D4AF37] transition-colors" />
-
                   <div>
                     {/* Top Header Badge & Number */}
                     <div className="flex items-center justify-between border-b border-white/10 pb-4">
@@ -128,7 +119,7 @@ export function WhyLama({ onApplyClick }) {
                       </span>
 
                       <div
-                        className="w-10 h-10 rounded-full flex items-center justify-center border border-white/15 bg-white/5 transition-transform duration-300 group-hover:scale-110"
+                        className="w-10 h-10 rounded-lg flex items-center justify-center border border-white/10 bg-white/5 transition-transform duration-300 group-hover:scale-105"
                         style={{ color: item.glowColor }}
                       >
                         <Icon size={18} />

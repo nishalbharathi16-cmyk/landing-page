@@ -82,10 +82,10 @@ export function CurriculumSection({ activeDomainId, setActiveDomainId }) {
                   Comprehensive Curriculum Framework
                 </span>
               </div>
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.12] tracking-tight text-white">
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.12] tracking-tight text-[#F6F2E9]">
                 Develop the Capabilities <br />
-                <span className="bg-gradient-to-r from-[#F6F2E9] via-[#D4AF37] to-[#C87549] bg-clip-text text-transparent font-serif italic font-normal">
-                  Modern VUCA Managers Need.
+                <span className="text-[#C87549] font-serif italic font-normal">
+                  Modern First-Time Managers Need.
                 </span>
               </h2>
               <p className="mt-3.5 text-base sm:text-lg leading-relaxed text-zinc-200 font-sans">
@@ -153,7 +153,7 @@ export function CurriculumSection({ activeDomainId, setActiveDomainId }) {
                     </h4>
                   </div>
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/15 text-[11px] font-mono text-[#D4AF37]">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37] animate-pulse" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]" />
                     <span>Progressive Capability Build</span>
                   </div>
                 </div>
@@ -192,17 +192,11 @@ export function CurriculumSection({ activeDomainId, setActiveDomainId }) {
               </div>
             </Reveal>
 
-            {/* 8 Course Cards with Enhanced Hover Elevation */}
+            {/* 8 Course Cards */}
             <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
               {CORE_LEADERSHIP_COURSES.map((course, idx) => (
                 <Reveal key={course.id} delay={idx * 0.04}>
-                  <div className="group relative flex h-full flex-col justify-between rounded-xl border border-white/15 bg-black/45 backdrop-blur-xl p-7 transition-all duration-300 ease-out hover:-translate-y-2 hover:border-[#D4AF37]/50 hover:shadow-[0_25px_55px_rgba(0,0,0,0.65)]">
-                    {/* Brass Corner Brackets */}
-                    <div aria-hidden="true" className="pointer-events-none absolute top-2.5 left-2.5 w-3 h-3 border-t-2 border-l-2 border-[#D4AF37]/50 group-hover:border-[#D4AF37] transition-colors" />
-                    <div aria-hidden="true" className="pointer-events-none absolute top-2.5 right-2.5 w-3 h-3 border-t-2 border-r-2 border-[#D4AF37]/50 group-hover:border-[#D4AF37] transition-colors" />
-                    <div aria-hidden="true" className="pointer-events-none absolute bottom-2.5 left-2.5 w-3 h-3 border-b-2 border-l-2 border-[#D4AF37]/50 group-hover:border-[#D4AF37] transition-colors" />
-                    <div aria-hidden="true" className="pointer-events-none absolute bottom-2.5 right-2.5 w-3 h-3 border-b-2 border-r-2 border-[#D4AF37]/50 group-hover:border-[#D4AF37] transition-colors" />
-
+                  <div className="group relative flex h-full flex-col justify-between rounded-xl border border-white/12 bg-[#1A1A18] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-white/25 shadow-lg">
                     <div>
                       <div className="flex items-center justify-between border-b border-white/10 pb-3">
                         <span className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-[#C87549]">
