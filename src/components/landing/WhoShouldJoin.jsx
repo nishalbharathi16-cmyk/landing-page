@@ -50,33 +50,33 @@ export function WhoShouldJoin({ onSelectTrack }) {
   return (
     <section
       id="who-should-join"
-      className="relative overflow-hidden border-b border-[#E5DFD3] bg-[#F5F1E8] py-20 sm:py-24 lg:py-28 text-[#14243A]"
+      className="relative overflow-hidden border-b border-[#D6E2DC] bg-[#F7FAF8] py-20 sm:py-24 lg:py-28 text-[#0A1A14]"
     >
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <Reveal>
-          <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end pb-8 border-b border-[#E5DFD3]">
+          <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end pb-8 border-b border-[#D6E2DC]">
             <div className="max-w-2xl">
               <div className="flex items-center gap-2.5 mb-3">
-                <span className="w-6 h-px bg-[#C5A46D]" />
-                <span className="text-xs font-sans font-semibold uppercase tracking-[0.2em] text-[#C5A46D]">
+                <span className="w-6 h-px bg-[#0D281E]" />
+                <span className="text-xs font-sans font-bold uppercase tracking-[0.2em] text-[#0D281E]">
                   Cohort Pathways &bull; 2026 Admissions
                 </span>
               </div>
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.12] tracking-tight text-[#14243A]">
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.12] tracking-tight text-[#0A1A14]">
                 Who Should Join? <br />
-                <span className="text-[#C5A46D] font-serif italic font-normal">
+                <span className="text-[#0D281E] font-serif italic font-normal">
                   Two Specialized Leadership Pathways.
                 </span>
               </h2>
-              <p className="mt-3.5 text-base sm:text-lg leading-relaxed text-[#626B78] font-sans">
+              <p className="mt-3.5 text-base sm:text-lg leading-relaxed text-[#556961] font-sans">
                 Tailored executive cohorts addressing the distinct transition hurdles faced by engineering graduates and management graduates entering modern corporate teams.
               </p>
             </div>
 
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#E5DFD3] text-xs font-sans text-[#14243A] self-start md:self-auto shadow-2xs">
-              <span className="w-2 h-2 rounded-full bg-[#C5A46D]" />
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#D6E2DC] text-xs font-sans text-[#0A1A14] self-start md:self-auto shadow-2xs">
+              <span className="w-2 h-2 rounded-full bg-[#0D281E]" />
               <span>Cohorts Capped at 24 Seats</span>
             </div>
           </div>
@@ -87,11 +87,11 @@ export function WhoShouldJoin({ onSelectTrack }) {
           {tracks.map((track, idx) => (
             <Reveal key={track.id} delay={idx * 0.1}>
               <article
-                className="group relative flex h-full flex-col justify-between rounded-xl border border-[#E5DFD3] bg-white p-3 sm:p-3.5 shadow-md hover:shadow-lg hover:border-[#C5A46D] transition-all duration-300 overflow-hidden"
+                className="group relative flex h-full flex-col justify-between rounded-xl border border-[#D6E2DC] bg-white p-3 sm:p-3.5 shadow-md hover:shadow-lg hover:border-[#0D281E] transition-all duration-300 overflow-hidden"
               >
                 <div>
                   {/* Photo with Hover Zoom */}
-                  <div className="overflow-hidden rounded-lg border border-[#E5DFD3]">
+                  <div className="overflow-hidden rounded-lg border border-[#D6E2DC]">
                     <AcademyImage
                       src={track.imageSrc}
                       alt={track.imageAlt}
@@ -104,40 +104,40 @@ export function WhoShouldJoin({ onSelectTrack }) {
 
                   <div className="p-6 sm:p-8">
                     {/* Badge Strip */}
-                    <div className="flex items-center justify-between border-b border-[#E5DFD3] pb-4">
-                      <span className="text-xs font-sans font-semibold uppercase tracking-[0.16em] text-[#C5A46D]">
+                    <div className="flex items-center justify-between border-b border-[#D6E2DC] pb-4">
+                      <span className="text-xs font-sans font-bold uppercase tracking-[0.16em] text-[#0D281E]">
                         {track.audience}
                       </span>
-                      <span className="text-[10px] font-sans font-medium uppercase tracking-wider px-3 py-1 rounded-full border border-[#E5DFD3] bg-[#F5F1E8] text-[#14243A]">
+                      <span className="text-[10px] font-sans font-medium uppercase tracking-wider px-3 py-1 rounded-full border border-[#D6E2DC] bg-[#EEF4F1] text-[#0A1A14]">
                         {track.trackBadge}
                       </span>
                     </div>
 
                     {/* Headline */}
-                    <h3 className="mt-5 font-serif text-2xl font-bold text-[#14243A] leading-snug transition-colors">
+                    <h3 className="mt-5 font-serif text-2xl font-bold text-[#0A1A14] leading-snug transition-colors">
                       {track.title}
                     </h3>
 
                     {/* Summary */}
-                    <p className="mt-3 text-xs sm:text-sm text-[#626B78] leading-relaxed font-sans">
+                    <p className="mt-3 text-xs sm:text-sm text-[#556961] leading-relaxed font-sans">
                       {track.summary}
                     </p>
 
                     {/* Eligibility Callout Box */}
-                    <div className="mt-5 rounded-lg border border-[#E5DFD3] bg-[#F5F1E8] p-4 text-xs text-[#626B78]">
-                      <span className="block font-sans text-[10px] uppercase font-bold text-[#C5A46D] tracking-wider mb-1">
+                    <div className="mt-5 rounded-lg border border-[#D6E2DC] bg-[#EEF4F1] p-4 text-xs text-[#556961]">
+                      <span className="block font-sans text-[10px] uppercase font-bold text-[#0D281E] tracking-wider mb-1">
                         Eligibility Profile:
                       </span>
                       <p className="leading-relaxed font-sans">{track.eligibility}</p>
                     </div>
 
                     {/* Key Curriculum Outcomes Checklist */}
-                    <ul className="mt-6 space-y-3 border-t border-[#E5DFD3] pt-5 text-xs text-[#626B78]">
+                    <ul className="mt-6 space-y-3 border-t border-[#D6E2DC] pt-5 text-xs text-[#556961]">
                       {track.points.map((pt) => (
                         <li key={pt.label} className="flex items-start gap-2.5">
-                          <Check size={14} className="shrink-0 mt-0.5 text-[#C5A46D]" />
+                          <Check size={14} className="shrink-0 mt-0.5 text-[#0D281E]" />
                           <span className="leading-relaxed font-sans">
-                            <strong className="text-[#14243A] font-medium">{pt.label}:</strong> {pt.desc}
+                            <strong className="text-[#0A1A14] font-medium">{pt.label}:</strong> {pt.desc}
                           </span>
                         </li>
                       ))}
@@ -150,10 +150,10 @@ export function WhoShouldJoin({ onSelectTrack }) {
                   <button
                     type="button"
                     onClick={() => onSelectTrack(track.formValue)}
-                    className="w-full inline-flex items-center justify-center gap-2 bg-[#C5A46D] hover:bg-[#B08E55] text-white py-3.5 px-6 rounded-lg text-xs font-semibold uppercase tracking-[0.14em] transition-all shadow-sm hover:scale-[1.01] active:scale-[0.99] cursor-pointer font-sans"
+                    className="w-full inline-flex items-center justify-center gap-2 bg-[#0D281E] hover:bg-[#163E30] text-white py-3.5 px-6 rounded-lg text-xs font-semibold uppercase tracking-[0.14em] transition-all shadow-sm hover:scale-[1.01] active:scale-[0.99] cursor-pointer font-sans"
                   >
                     <span>Apply for this Pathway</span>
-                    <ArrowRight size={14} />
+                    <ArrowRight size={14} className="text-[#C28E3A]" />
                   </button>
                 </div>
 

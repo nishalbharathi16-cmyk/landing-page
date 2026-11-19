@@ -125,7 +125,7 @@ export function ConversionSection({ selectedTrack }) {
   return (
     <section
       id="apply"
-      className="relative overflow-hidden border-b border-[#E5DFD3] bg-[#F5F1E8] py-20 sm:py-24 lg:py-28 text-[#14243A]"
+      className="relative overflow-hidden border-b border-[#D6E2DC] bg-[#F7FAF8] py-20 sm:py-24 lg:py-28 text-[#0A1A14]"
     >
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-14 items-start">
@@ -133,48 +133,48 @@ export function ConversionSection({ selectedTrack }) {
           {/* Left Column: Direct High-Converting Form */}
           <div className="lg:col-span-7">
             <Reveal>
-              <div className="relative rounded-2xl border border-[#E5DFD3] bg-white p-7 sm:p-10 shadow-lg overflow-hidden">
+              <div className="relative rounded-2xl border border-[#D6E2DC] bg-white p-7 sm:p-10 shadow-lg overflow-hidden">
                 {/* Section Eyebrow & Strong Headline */}
-                <span className="text-xs font-sans font-semibold uppercase tracking-[0.2em] text-[#C5A46D]">
+                <span className="text-xs font-sans font-bold uppercase tracking-[0.2em] text-[#0D281E]">
                   Cohort Intake 2026 &bull; Priority Registration
                 </span>
-                <h2 className="mt-2.5 font-serif text-3xl sm:text-4xl font-bold leading-tight text-[#14243A]">
+                <h2 className="mt-2.5 font-serif text-3xl sm:text-4xl font-bold leading-tight text-[#0A1A14]">
                   Your Leadership Journey Starts Here.
                 </h2>
-                <p className="mt-3 text-xs sm:text-sm text-[#626B78] leading-relaxed font-sans">
+                <p className="mt-3 text-xs sm:text-sm text-[#556961] leading-relaxed font-sans">
                   Complete this admissions enquiry form to register your interest for upcoming 2026 cohort intakes, receive syllabus briefing schedules, and connect with academic advisors.
                 </p>
 
                 {submittedRecord ? (
-                  <div className="mt-8 rounded-xl border border-[#C5A46D]/40 bg-[#F5F1E8] p-7 sm:p-8 space-y-5 animate-in fade-in duration-300">
+                  <div className="mt-8 rounded-xl border border-[#0D281E]/30 bg-[#EEF4F1] p-7 sm:p-8 space-y-5 animate-in fade-in duration-300">
                     <div className="flex items-center gap-3.5">
-                      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#C5A46D]/20 text-[#C5A46D] border border-[#C5A46D]/40 shadow-xs">
+                      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0D281E]/15 text-[#0D281E] border border-[#0D281E]/30 shadow-xs">
                         <Check size={24} />
                       </span>
                       <div>
-                        <h4 className="font-serif text-xl sm:text-2xl font-bold text-[#14243A]">
+                        <h4 className="font-serif text-xl sm:text-2xl font-bold text-[#0A1A14]">
                           Admissions Enquiry Confirmed
                         </h4>
-                        <p className="text-xs text-[#C5A46D] font-sans font-medium">
+                        <p className="text-xs text-[#0D281E] font-sans font-medium">
                           Priority Record Logged for: {submittedRecord.name}
                         </p>
                       </div>
                     </div>
 
-                    <div className="border border-[#E5DFD3] py-4 text-xs space-y-2 text-[#14243A] bg-white px-4 rounded-lg shadow-2xs">
+                    <div className="border border-[#D6E2DC] py-4 text-xs space-y-2 text-[#0A1A14] bg-white px-4 rounded-lg shadow-2xs">
                       <p>
-                        <strong className="text-[#14243A]">Track Interest:</strong> {submittedRecord.programmeInterest}
+                        <strong className="text-[#0A1A14]">Track Interest:</strong> {submittedRecord.programmeInterest}
                       </p>
                       <p>
-                        <strong className="text-[#14243A]">Academic Background:</strong> {submittedRecord.academicBackground}
+                        <strong className="text-[#0A1A14]">Academic Background:</strong> {submittedRecord.academicBackground}
                       </p>
                       <p>
-                        <strong className="text-[#14243A]">Contact:</strong> {submittedRecord.email} &bull; {submittedRecord.phone}
+                        <strong className="text-[#0A1A14]">Contact:</strong> {submittedRecord.email} &bull; {submittedRecord.phone}
                       </p>
                     </div>
 
-                    <p className="text-xs leading-relaxed text-[#626B78]">
-                      Your enquiry has been securely recorded. Dispatch directly to our admissions advisors via <strong className="text-[#14243A]">WhatsApp</strong> for fastest processing, or via <strong className="text-[#14243A]">Official Admissions Email</strong>:
+                    <p className="text-xs leading-relaxed text-[#556961]">
+                      Your enquiry has been securely recorded. Dispatch directly to our admissions advisors via <strong className="text-[#0A1A14]">WhatsApp</strong> for fastest processing, or via <strong className="text-[#0A1A14]">Official Admissions Email</strong>:
                     </p>
 
                     {/* Primary Hybrid Conversion Actions */}
@@ -193,26 +193,26 @@ export function ConversionSection({ selectedTrack }) {
                       {/* 2. Direct Email Desk */}
                       <a
                         href={mailtoLink}
-                        className="inline-flex items-center justify-center gap-2 bg-[#C5A46D] hover:bg-[#B08E55] text-white px-5 py-3.5 text-xs font-semibold uppercase tracking-wider rounded-lg transition-all shadow-sm hover:scale-[1.02] active:scale-98 cursor-pointer"
+                        className="inline-flex items-center justify-center gap-2 bg-[#0D281E] hover:bg-[#163E30] text-white px-5 py-3.5 text-xs font-semibold uppercase tracking-wider rounded-lg transition-all shadow-sm hover:scale-[1.02] active:scale-98 cursor-pointer"
                       >
-                        <Send size={13} />
+                        <Send size={13} className="text-[#C28E3A]" />
                         <span>Send via Email Desk</span>
                       </a>
                     </div>
 
-                    <div className="flex items-center justify-between pt-2 border-t border-[#E5DFD3] text-xs">
+                    <div className="flex items-center justify-between pt-2 border-t border-[#D6E2DC] text-xs">
                       <a
                         href="tel:+919363013960"
-                        className="inline-flex items-center gap-1.5 text-[#14243A] hover:text-[#C5A46D] transition-colors font-medium"
+                        className="inline-flex items-center gap-1.5 text-[#0A1A14] hover:text-[#0D281E] transition-colors font-medium"
                       >
-                        <Phone size={13} className="text-[#C5A46D]" />
+                        <Phone size={13} className="text-[#C28E3A]" />
                         <span>Call Admissions: +91 93630 13960</span>
                       </a>
 
                       <button
                         type="button"
                         onClick={() => setSubmittedRecord(null)}
-                        className="text-[#626B78] hover:text-[#14243A] underline cursor-pointer"
+                        className="text-[#556961] hover:text-[#0A1A14] underline cursor-pointer"
                       >
                         Submit Another Enquiry &rarr;
                       </button>
@@ -225,9 +225,9 @@ export function ConversionSection({ selectedTrack }) {
                     <div>
                       <label
                         htmlFor="enquiry-name"
-                        className="block text-xs font-semibold uppercase tracking-[0.14em] text-[#14243A]"
+                        className="block text-xs font-semibold uppercase tracking-[0.14em] text-[#0A1A14]"
                       >
-                        Full Name <span className="text-[#C5A46D]">*</span>
+                        Full Name <span className="text-[#0D281E]">*</span>
                       </label>
                       <input
                         id="enquiry-name"
@@ -241,10 +241,10 @@ export function ConversionSection({ selectedTrack }) {
                           if (errors.name) setErrors((prev) => ({ ...prev, name: '' }));
                         }}
                         placeholder="e.g. S. Ramanathan"
-                        className={`mt-2 w-full rounded-lg border bg-[#F5F1E8] px-4 py-3.5 text-sm text-[#14243A] placeholder:text-[#626B78]/60 transition-all duration-200 ${
+                        className={`mt-2 w-full rounded-lg border bg-[#EEF4F1] px-4 py-3.5 text-sm text-[#0A1A14] placeholder:text-[#556961]/60 transition-all duration-200 ${
                           errors.name
                             ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-500/20 focus:outline-none'
-                            : 'border-[#E5DFD3] focus:border-[#C5A46D] focus:ring-2 focus:ring-[#C5A46D]/20 focus:bg-white focus:outline-none'
+                            : 'border-[#D6E2DC] focus:border-[#0D281E] focus:ring-2 focus:ring-[#0D281E]/20 focus:bg-white focus:outline-none'
                         }`}
                       />
                       {errors.name && (
@@ -263,9 +263,9 @@ export function ConversionSection({ selectedTrack }) {
                       <div>
                         <label
                           htmlFor="enquiry-email"
-                          className="block text-xs font-semibold uppercase tracking-[0.14em] text-[#14243A]"
+                          className="block text-xs font-semibold uppercase tracking-[0.14em] text-[#0A1A14]"
                         >
-                          Email Address <span className="text-[#C5A46D]">*</span>
+                          Email Address <span className="text-[#0D281E]">*</span>
                         </label>
                         <input
                           id="enquiry-email"
@@ -279,10 +279,10 @@ export function ConversionSection({ selectedTrack }) {
                             if (errors.email) setErrors((prev) => ({ ...prev, email: '' }));
                           }}
                           placeholder="you@domain.com"
-                          className={`mt-2 w-full rounded-lg border bg-[#F5F1E8] px-4 py-3.5 text-sm text-[#14243A] placeholder:text-[#626B78]/60 transition-all duration-200 ${
+                          className={`mt-2 w-full rounded-lg border bg-[#EEF4F1] px-4 py-3.5 text-sm text-[#0A1A14] placeholder:text-[#556961]/60 transition-all duration-200 ${
                             errors.email
                               ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-500/20 focus:outline-none'
-                              : 'border-[#E5DFD3] focus:border-[#C5A46D] focus:ring-2 focus:ring-[#C5A46D]/20 focus:bg-white focus:outline-none'
+                              : 'border-[#D6E2DC] focus:border-[#0D281E] focus:ring-2 focus:ring-[#0D281E]/20 focus:bg-white focus:outline-none'
                           }`}
                         />
                         {errors.email && (
@@ -300,9 +300,9 @@ export function ConversionSection({ selectedTrack }) {
                       <div>
                         <label
                           htmlFor="enquiry-phone"
-                          className="block text-xs font-semibold uppercase tracking-[0.14em] text-[#14243A]"
+                          className="block text-xs font-semibold uppercase tracking-[0.14em] text-[#0A1A14]"
                         >
-                          Mobile / WhatsApp <span className="text-[#C5A46D]">*</span>
+                          Mobile / WhatsApp <span className="text-[#0D281E]">*</span>
                         </label>
                         <input
                           id="enquiry-phone"
@@ -316,10 +316,10 @@ export function ConversionSection({ selectedTrack }) {
                             if (errors.phone) setErrors((prev) => ({ ...prev, phone: '' }));
                           }}
                           placeholder="+91 98765 43210"
-                          className={`mt-2 w-full rounded-lg border bg-[#F5F1E8] px-4 py-3.5 text-sm text-[#14243A] placeholder:text-[#626B78]/60 transition-all duration-200 ${
+                          className={`mt-2 w-full rounded-lg border bg-[#EEF4F1] px-4 py-3.5 text-sm text-[#0A1A14] placeholder:text-[#556961]/60 transition-all duration-200 ${
                             errors.phone
                               ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-500/20 focus:outline-none'
-                              : 'border-[#E5DFD3] focus:border-[#C5A46D] focus:ring-2 focus:ring-[#C5A46D]/20 focus:bg-white focus:outline-none'
+                              : 'border-[#D6E2DC] focus:border-[#0D281E] focus:ring-2 focus:ring-[#0D281E]/20 focus:bg-white focus:outline-none'
                           }`}
                         />
                         {errors.phone && (
@@ -338,9 +338,9 @@ export function ConversionSection({ selectedTrack }) {
                     <div>
                       <label
                         htmlFor="enquiry-background"
-                        className="block text-xs font-semibold uppercase tracking-[0.14em] text-[#14243A]"
+                        className="block text-xs font-semibold uppercase tracking-[0.14em] text-[#0A1A14]"
                       >
-                        Academic Background <span className="text-[#C5A46D]">*</span>
+                        Academic Background <span className="text-[#0D281E]">*</span>
                       </label>
                       <select
                         id="enquiry-background"
@@ -352,15 +352,15 @@ export function ConversionSection({ selectedTrack }) {
                           setForm({ ...form, academicBackground: e.target.value });
                           if (errors.academicBackground) setErrors((prev) => ({ ...prev, academicBackground: '' }));
                         }}
-                        className={`mt-2 w-full rounded-lg border bg-[#F5F1E8] px-4 py-3.5 text-sm text-[#14243A] transition-all duration-200 ${
+                        className={`mt-2 w-full rounded-lg border bg-[#EEF4F1] px-4 py-3.5 text-sm text-[#0A1A14] transition-all duration-200 ${
                           errors.academicBackground
                             ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-500/20 focus:outline-none'
-                            : 'border-[#E5DFD3] focus:border-[#C5A46D] focus:ring-2 focus:ring-[#C5A46D]/20 focus:bg-white focus:outline-none'
+                            : 'border-[#D6E2DC] focus:border-[#0D281E] focus:ring-2 focus:ring-[#0D281E]/20 focus:bg-white focus:outline-none'
                         }`}
                       >
                         <option value="">Select your academic qualification</option>
                         {ACADEMIC_OPTIONS.map((opt) => (
-                          <option key={opt} value={opt} className="bg-white text-[#14243A]">
+                          <option key={opt} value={opt} className="bg-white text-[#0A1A14]">
                             {opt}
                           </option>
                         ))}
@@ -380,7 +380,7 @@ export function ConversionSection({ selectedTrack }) {
                     <div>
                       <label
                         htmlFor="enquiry-track"
-                        className="block text-xs font-semibold uppercase tracking-[0.14em] text-[#14243A]"
+                        className="block text-xs font-semibold uppercase tracking-[0.14em] text-[#0A1A14]"
                       >
                         Preferred Pathway Track
                       </label>
@@ -390,12 +390,12 @@ export function ConversionSection({ selectedTrack }) {
                         onChange={(e) =>
                           setForm({ ...form, programmeInterest: e.target.value })
                         }
-                        className="mt-2 w-full rounded-lg border border-[#E5DFD3] bg-[#F5F1E8] px-4 py-3.5 text-sm text-[#14243A] focus:border-[#C5A46D] focus:bg-white focus:outline-none transition-all"
+                        className="mt-2 w-full rounded-lg border border-[#D6E2DC] bg-[#EEF4F1] px-4 py-3.5 text-sm text-[#0A1A14] focus:border-[#0D281E] focus:bg-white focus:outline-none transition-all"
                       >
-                        <option value="Engineering Students Leadership Pathway" className="bg-white text-[#14243A]">
+                        <option value="Engineering Students Leadership Pathway" className="bg-white text-[#0A1A14]">
                           Engineering Leadership Pathway (B.Tech / B.E.)
                         </option>
-                        <option value="MBA Students Management Pathway" className="bg-white text-[#14243A]">
+                        <option value="MBA Students Management Pathway" className="bg-white text-[#0A1A14]">
                           Business Management Pathway (MBA)
                         </option>
                       </select>
@@ -403,12 +403,12 @@ export function ConversionSection({ selectedTrack }) {
 
                     {/* Instant WhatsApp Delivery Toggle */}
                     <div className="pt-1">
-                      <label className="flex items-center gap-2.5 text-xs text-[#626B78] cursor-pointer select-none">
+                      <label className="flex items-center gap-2.5 text-xs text-[#556961] cursor-pointer select-none">
                         <input
                           type="checkbox"
                           checked={connectViaWhatsApp}
                           onChange={(e) => setConnectViaWhatsApp(e.target.checked)}
-                          className="h-4 w-4 rounded border-[#E5DFD3] bg-[#F5F1E8] text-emerald-600 focus:ring-emerald-500/40 accent-emerald-600 cursor-pointer"
+                          className="h-4 w-4 rounded border-[#D6E2DC] bg-[#EEF4F1] text-emerald-600 focus:ring-emerald-500/40 accent-emerald-600 cursor-pointer"
                         />
                         <span className="flex items-center gap-1.5 flex-wrap">
                           <span>Instantly connect with Admissions on WhatsApp</span>
@@ -424,7 +424,7 @@ export function ConversionSection({ selectedTrack }) {
                       <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="w-full inline-flex items-center justify-center gap-2.5 bg-[#C5A46D] hover:bg-[#B08E55] text-white py-4 px-8 text-sm font-semibold uppercase tracking-[0.14em] rounded-lg transition-all shadow-sm hover:shadow-md disabled:opacity-70 active:scale-98 cursor-pointer"
+                        className="w-full inline-flex items-center justify-center gap-2.5 bg-[#0D281E] hover:bg-[#163E30] text-white py-4 px-8 text-sm font-semibold uppercase tracking-[0.14em] rounded-lg transition-all shadow-sm hover:shadow-md disabled:opacity-70 active:scale-98 cursor-pointer"
                       >
                         {isSubmitting ? (
                           <>
@@ -434,13 +434,13 @@ export function ConversionSection({ selectedTrack }) {
                         ) : (
                           <>
                             <span>Submit Application Enquiry</span>
-                            <ArrowRight size={15} />
+                            <ArrowRight size={15} className="text-[#C28E3A]" />
                           </>
                         )}
                       </button>
                     </div>
 
-                    <p className="text-[11px] text-[#626B78] text-center pt-1 font-sans">
+                    <p className="text-[11px] text-[#556961] text-center pt-1 font-sans">
                       Your details are handled strictly under LAMA privacy governance solely for admissions communication.
                     </p>
                   </form>
@@ -452,52 +452,52 @@ export function ConversionSection({ selectedTrack }) {
           {/* Right Column: Key Admissions Information & Direct Contact */}
           <div className="lg:col-span-5 space-y-6">
             <Reveal delay={0.1}>
-              <div className="rounded-2xl border border-[#E5DFD3] bg-white p-7 sm:p-8 space-y-6 shadow-lg">
+              <div className="rounded-2xl border border-[#D6E2DC] bg-white p-7 sm:p-8 space-y-6 shadow-lg">
                 
                 {/* 1. Programme Delivery */}
                 <div className="flex items-start gap-4">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-[#E5DFD3] bg-[#F5F1E8] text-[#C5A46D] shadow-2xs">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-[#D6E2DC] bg-[#EEF4F1] text-[#0D281E] shadow-2xs">
                     <Laptop size={20} />
                   </span>
                   <div>
-                    <span className="text-[11px] font-sans font-semibold uppercase tracking-[0.16em] text-[#C5A46D]">
+                    <span className="text-[11px] font-sans font-bold uppercase tracking-[0.16em] text-[#0D281E]">
                       Programme Delivery
                     </span>
-                    <h4 className="mt-0.5 font-serif text-lg font-bold text-[#14243A]">
+                    <h4 className="mt-0.5 font-serif text-lg font-bold text-[#0A1A14]">
                       Live Online Coaching
                     </h4>
-                    <p className="mt-1.5 text-xs sm:text-sm text-[#626B78] leading-relaxed font-sans">
+                    <p className="mt-1.5 text-xs sm:text-sm text-[#556961] leading-relaxed font-sans">
                       LAMA is conducted entirely via live interactive online coaching, virtual War Room simulations, and facilitator-led executive masterclasses accessible from anywhere.
                     </p>
                   </div>
                 </div>
 
                 {/* 2. Academy Location */}
-                <div className="border-t border-[#E5DFD3] pt-6 flex items-start gap-4">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-[#E5DFD3] bg-[#F5F1E8] text-[#C5A46D] shadow-2xs">
+                <div className="border-t border-[#D6E2DC] pt-6 flex items-start gap-4">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-[#D6E2DC] bg-[#EEF4F1] text-[#0D281E] shadow-2xs">
                     <Building size={20} />
                   </span>
                   <div>
-                    <span className="text-[11px] font-sans font-semibold uppercase tracking-[0.16em] text-[#C5A46D]">
+                    <span className="text-[11px] font-sans font-bold uppercase tracking-[0.16em] text-[#0D281E]">
                       Academy Location
                     </span>
-                    <h4 className="mt-0.5 font-serif text-lg font-bold text-[#14243A]">
+                    <h4 className="mt-0.5 font-serif text-lg font-bold text-[#0A1A14]">
                       Administrative Office
                     </h4>
-                    <p className="mt-1.5 text-xs sm:text-sm text-[#626B78] leading-relaxed font-sans">
+                    <p className="mt-1.5 text-xs sm:text-sm text-[#556961] leading-relaxed font-sans">
                       Chennai &ndash; 600040, Tamil Nadu, India. All candidate orientation, cohort discussions, and mentorship coaching are delivered virtually.
                     </p>
                   </div>
                 </div>
 
                 {/* 3. Direct Contact Lines */}
-                <div className="border-t border-[#E5DFD3] pt-5 space-y-2 text-xs leading-relaxed text-[#626B78] font-sans">
+                <div className="border-t border-[#D6E2DC] pt-5 space-y-2 text-xs leading-relaxed text-[#556961] font-sans">
                   <div className="flex items-center gap-2 flex-wrap">
-                    <Phone size={13} className="text-[#C5A46D] shrink-0" />
+                    <Phone size={13} className="text-[#0D281E] shrink-0" />
                     <span>Official admissions line:{' '}</span>
                     <a
                       href="tel:+919363013960"
-                      className="font-bold text-[#14243A] hover:text-[#C5A46D] transition-colors font-sans"
+                      className="font-bold text-[#0A1A14] hover:text-[#0D281E] transition-colors font-sans"
                     >
                       +91 93630 13960
                     </a>
@@ -505,11 +505,11 @@ export function ConversionSection({ selectedTrack }) {
                   </div>
 
                   <div className="flex items-center gap-2 flex-wrap">
-                    <Mail size={13} className="text-[#C5A46D] shrink-0" />
+                    <Mail size={13} className="text-[#0D281E] shrink-0" />
                     <span>Admissions &amp; Academic Desk:{' '}</span>
                     <a
                       href="mailto:drmaru@learn-lead-manage.com"
-                      className="font-bold text-[#14243A] hover:text-[#C5A46D] transition-colors font-sans"
+                      className="font-bold text-[#0A1A14] hover:text-[#0D281E] transition-colors font-sans"
                     >
                       drmaru@learn-lead-manage.com
                     </a>
@@ -517,7 +517,7 @@ export function ConversionSection({ selectedTrack }) {
                 </div>
 
                 {/* Direct Action Buttons */}
-                <div className="border-t border-[#E5DFD3] pt-4 flex items-center gap-3">
+                <div className="border-t border-[#D6E2DC] pt-4 flex items-center gap-3">
                   <a
                     href="https://wa.me/919363013960"
                     target="_blank"

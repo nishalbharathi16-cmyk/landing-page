@@ -13,7 +13,7 @@ export function AcademyImage({
 
   return (
     <div
-      className={`relative overflow-hidden bg-[#F5F1E8] border border-[#E5DFD3] ${aspectClassName} ${className}`}
+      className={`relative overflow-hidden bg-[#EEF4F1] border border-[#D6E2DC] ${aspectClassName} ${className}`}
     >
       {!hasError ? (
         <img

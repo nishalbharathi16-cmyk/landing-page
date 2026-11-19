@@ -35,7 +35,7 @@ export function AcademyVideoPlayer({
 
   return (
     <div
-      className={`group relative overflow-hidden rounded-xl border border-[#E5DFD3] bg-[#F5F1E8] shadow-md transition-colors duration-300 ${className}`}
+      className={`group relative overflow-hidden rounded-xl border border-[#D6E2DC] bg-[#EEF4F1] shadow-md transition-colors duration-300 ${className}`}
     >
       <div className={`relative w-full ${aspectClassName}`}>
         <video
@@ -75,10 +75,10 @@ export function AcademyVideoPlayer({
               </span>
             </div>
 
-            {/* Custom Champagne-Gold Play Button */}
+            {/* Custom Oxford Pine & Brass Play Button */}
             <div className="flex items-center justify-center">
-              <span className="relative flex h-16 w-16 sm:h-18 sm:w-18 items-center justify-center rounded-full bg-[#C5A46D] hover:bg-[#B08E55] text-white shadow-[0_4px_25px_rgba(197,164,109,0.5)] transition-all duration-300 group-hover:scale-110 active:scale-95 border-2 border-white/80">
-                <Play className="ml-1 h-7 w-7 fill-current sm:h-8 sm:w-8" aria-hidden="true" />
+              <span className="relative flex h-16 w-16 sm:h-18 sm:w-18 items-center justify-center rounded-full bg-[#0D281E] hover:bg-[#163E30] text-white shadow-[0_4px_25px_rgba(13,40,30,0.5)] transition-all duration-300 group-hover:scale-110 active:scale-95 border-2 border-[#C28E3A]">
+                <Play className="ml-1 h-7 w-7 fill-current sm:h-8 sm:w-8 text-[#C28E3A]" aria-hidden="true" />
               </span>
             </div>
 

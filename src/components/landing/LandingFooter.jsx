@@ -11,15 +11,15 @@ export function LandingFooter() {
   };
 
   return (
-    <footer className="bg-[#14243A] text-[#F5F1E8] border-t border-[#14243A]">
+    <footer className="bg-[#081B14] text-[#F0F6F3] border-t border-[#081B14]">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         
         {/* Main Clean Row: Logo + Contact + Actions */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8 pb-10 border-b border-[#F5F1E8]/15">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8 pb-10 border-b border-[#F0F6F3]/15">
           
           {/* Brand Logo & Subtitle */}
           <div className="space-y-3">
-            <a href="#home" className="inline-block bg-white p-2.5 rounded-lg border border-[#E5DFD3] shadow-xs">
+            <a href="#home" className="inline-block bg-white p-2.5 rounded-lg border border-[#D6E2DC] shadow-xs">
               <img
                 src="/images/lama-logo.jpg"
                 alt="LAMA – Leadership & Managerial Skills Academy"
@@ -27,60 +27,60 @@ export function LandingFooter() {
                 loading="lazy"
               />
             </a>
-            <p className="text-xs text-[#F5F1E8]/75 max-w-md font-sans leading-relaxed">
+            <p className="text-xs text-[#F0F6F3]/75 max-w-md font-sans leading-relaxed">
               LAMA &ndash; Leadership &amp; Managerial Skills Academy. An applied finishing academy architecting next-generation engineering &amp; business leaders.
             </p>
           </div>
 
           {/* Minimal Contact & Location */}
-          <div className="space-y-2.5 text-xs text-[#F5F1E8]/85 font-sans">
+          <div className="space-y-2.5 text-xs text-[#F0F6F3]/85 font-sans">
             <div className="flex items-center gap-2">
-              <Phone size={13} className="text-[#C5A46D]" />
+              <Phone size={13} className="text-[#C28E3A]" />
               <span>Admissions Line: </span>
               <a
                 href="tel:+919363013960"
-                className="font-semibold text-white hover:text-[#C5A46D] transition-colors"
+                className="font-semibold text-white hover:text-[#C28E3A] transition-colors"
               >
                 +91 93630 13960
               </a>
             </div>
 
             <div className="flex items-center gap-2">
-              <Mail size={13} className="text-[#C5A46D]" />
+              <Mail size={13} className="text-[#C28E3A]" />
               <span>Email: </span>
               <a
                 href="mailto:drmaru@learn-lead-manage.com"
-                className="font-semibold text-white hover:text-[#C5A46D] transition-colors"
+                className="font-semibold text-white hover:text-[#C28E3A] transition-colors"
               >
                 drmaru@learn-lead-manage.com
               </a>
             </div>
 
             <div className="flex items-center gap-2">
-              <MapPin size={13} className="text-[#C5A46D]" />
+              <MapPin size={13} className="text-[#C28E3A]" />
               <span>Campus: Anna Nagar, Chennai &ndash; 600040, India</span>
             </div>
 
             {/* Quick Section Shortcuts */}
-            <div className="pt-2 flex flex-wrap items-center gap-3 font-sans text-[11px] text-[#F5F1E8]/70">
-              <a href="#why-lama" className="hover:text-[#C5A46D] transition-colors">About</a>
+            <div className="pt-2 flex flex-wrap items-center gap-3 font-sans text-[11px] text-[#F0F6F3]/70">
+              <a href="#why-lama" className="hover:text-[#C28E3A] transition-colors">About</a>
               <span>&bull;</span>
-              <a href="#programme" className="hover:text-[#C5A46D] transition-colors">Programme</a>
+              <a href="#programme" className="hover:text-[#C28E3A] transition-colors">Programme</a>
               <span>&bull;</span>
-              <a href="#curriculum" className="hover:text-[#C5A46D] transition-colors">Curriculum</a>
+              <a href="#curriculum" className="hover:text-[#C28E3A] transition-colors">Curriculum</a>
               <span>&bull;</span>
-              <a href="#experience" className="hover:text-[#C5A46D] transition-colors">Experience</a>
+              <a href="#experience" className="hover:text-[#C28E3A] transition-colors">Experience</a>
               <span>&bull;</span>
-              <a href="#mentors" className="hover:text-[#C5A46D] transition-colors">Mentors</a>
+              <a href="#mentors" className="hover:text-[#C28E3A] transition-colors">Mentors</a>
               <span>&bull;</span>
-              <a href="#apply" className="hover:text-[#C5A46D] font-bold text-white transition-colors">Apply</a>
+              <a href="#apply" className="hover:text-[#C28E3A] font-bold text-white transition-colors">Apply</a>
             </div>
           </div>
 
         </div>
 
         {/* Bottom Bar: Copyright + Legal Links + Back to Top */}
-        <div className="pt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 text-xs text-[#F5F1E8]/65 font-sans">
+        <div className="pt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 text-xs text-[#F0F6F3]/65 font-sans">
           <p>
             &copy; {currentYear} LAMA &ndash; Leadership &amp; Managerial Skills Academy. All rights reserved.
           </p>
@@ -103,7 +103,7 @@ export function LandingFooter() {
             <button
               type="button"
               onClick={scrollToTop}
-              className="inline-flex items-center gap-1 text-[#C5A46D] hover:text-white transition-colors cursor-pointer"
+              className="inline-flex items-center gap-1 text-[#C28E3A] hover:text-white transition-colors cursor-pointer"
             >
               <span>Back to Top</span>
               <ArrowUp size={12} />

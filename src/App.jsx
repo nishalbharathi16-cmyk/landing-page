@@ -32,10 +32,10 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F5F1E8] text-[#14243A] flex flex-col font-sans selection:bg-[#C5A46D]/25 selection:text-[#14243A] overflow-x-hidden">
+    <div className="min-h-screen bg-[#F7FAF8] text-[#0A1A14] flex flex-col font-sans selection:bg-[#0D281E] selection:text-white overflow-x-hidden">
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-[#14243A] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white border border-[#C5A46D]"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-[#0D281E] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white border border-[#C28E3A]"
       >
         Skip to main content
       </a>
