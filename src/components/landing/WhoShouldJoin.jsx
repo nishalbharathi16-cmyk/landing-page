@@ -24,8 +24,6 @@ export function WhoShouldJoin({ onSelectTrack }) {
         { label: 'Sprint-to-OKR Delivery', desc: 'multi-team agile cadences & delivery rhythm' },
         { label: 'Architectural Tradeoffs', desc: 'commercial defense before senior leadership' },
       ],
-      color: '#38BDF8',
-      tagBg: 'bg-[#38BDF8]/15 text-[#7DD3FC] border-[#38BDF8]/30',
     },
     {
       id: 'mba',
@@ -46,8 +44,6 @@ export function WhoShouldJoin({ onSelectTrack }) {
         { label: 'Crisis & Turnaround Command', desc: 'operational friction & PR incident control' },
         { label: 'Incentive Alignment', desc: 'cross-functional engineering-vs-sales team synergy' },
       ],
-      color: '#C87549',
-      tagBg: 'bg-[#C87549]/15 text-[#E59B72] border-[#C87549]/30',
     },
   ];
 
@@ -67,7 +63,7 @@ export function WhoShouldJoin({ onSelectTrack }) {
             <div className="max-w-2xl">
               <div className="flex items-center gap-2.5 mb-3">
                 <span className="w-6 h-px bg-[#C87549]" />
-                <span className="text-xs font-mono font-semibold uppercase tracking-[0.2em] text-[#D4AF37]">
+                <span className="text-xs font-sans font-semibold uppercase tracking-[0.2em] text-[#C87549]">
                   Cohort Pathways &bull; 2026 Admissions
                 </span>
               </div>
@@ -77,13 +73,13 @@ export function WhoShouldJoin({ onSelectTrack }) {
                   Two Specialized Leadership Pathways.
                 </span>
               </h2>
-              <p className="mt-3.5 text-base sm:text-lg leading-relaxed text-zinc-200 font-sans">
+              <p className="mt-3.5 text-base sm:text-lg leading-relaxed text-zinc-300 font-sans">
                 Tailored executive cohorts addressing the distinct transition hurdles faced by engineering graduates and management graduates entering modern corporate teams.
               </p>
             </div>
 
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/15 text-xs font-mono text-zinc-200 self-start md:self-auto">
-              <span className="w-2 h-2 rounded-full bg-[#10B981]" />
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-sans text-stone-300 self-start md:self-auto">
+              <span className="w-2 h-2 rounded-full bg-[#C87549]" />
               <span>Cohorts Capped at 24 Seats</span>
             </div>
           </div>
@@ -112,39 +108,39 @@ export function WhoShouldJoin({ onSelectTrack }) {
                   <div className="p-6 sm:p-8">
                     {/* Badge Strip */}
                     <div className="flex items-center justify-between border-b border-white/10 pb-4">
-                      <span className="text-xs font-mono font-bold uppercase tracking-[0.16em] text-[#D4AF37]">
+                      <span className="text-xs font-sans font-semibold uppercase tracking-[0.16em] text-[#C87549]">
                         {track.audience}
                       </span>
-                      <span className={`text-[10px] font-mono font-bold uppercase tracking-wider px-3 py-1 rounded-full border ${track.tagBg}`}>
+                      <span className="text-[10px] font-sans font-medium uppercase tracking-wider px-3 py-1 rounded-full border border-white/10 bg-white/[0.04] text-stone-300">
                         {track.trackBadge}
                       </span>
                     </div>
 
                     {/* Headline */}
-                    <h3 className="mt-5 font-serif text-2xl font-bold text-white leading-snug group-hover:text-[#F3E5AB] transition-colors">
+                    <h3 className="mt-5 font-serif text-2xl font-bold text-[#F6F2E9] leading-snug group-hover:text-white transition-colors">
                       {track.title}
                     </h3>
 
                     {/* Summary */}
-                    <p className="mt-3 text-xs sm:text-sm text-zinc-200 leading-relaxed font-sans">
+                    <p className="mt-3 text-xs sm:text-sm text-zinc-300 leading-relaxed font-sans">
                       {track.summary}
                     </p>
 
                     {/* Eligibility Callout Box */}
-                    <div className="mt-5 rounded-lg border border-white/10 bg-white/5 p-4 text-xs text-zinc-200">
-                      <span className="block font-mono text-[10px] uppercase font-bold text-[#D4AF37] tracking-wider mb-1">
+                    <div className="mt-5 rounded-lg border border-white/10 bg-[#161614] p-4 text-xs text-zinc-300">
+                      <span className="block font-sans text-[10px] uppercase font-bold text-[#C87549] tracking-wider mb-1">
                         Eligibility Profile:
                       </span>
-                      <p className="leading-relaxed">{track.eligibility}</p>
+                      <p className="leading-relaxed font-sans">{track.eligibility}</p>
                     </div>
 
                     {/* Key Curriculum Outcomes Checklist */}
-                    <ul className="mt-6 space-y-3 border-t border-white/10 pt-5 text-xs text-zinc-100">
+                    <ul className="mt-6 space-y-3 border-t border-white/10 pt-5 text-xs text-zinc-200">
                       {track.points.map((pt) => (
                         <li key={pt.label} className="flex items-start gap-2.5">
-                          <Check size={14} className="shrink-0 mt-0.5" style={{ color: track.color }} />
-                          <span className="leading-relaxed">
-                            <strong className="text-white font-semibold">{pt.label}:</strong> {pt.desc}
+                          <Check size={14} className="shrink-0 mt-0.5 text-[#C87549]" />
+                          <span className="leading-relaxed font-sans">
+                            <strong className="text-white font-medium">{pt.label}:</strong> {pt.desc}
                           </span>
                         </li>
                       ))}
@@ -157,7 +153,7 @@ export function WhoShouldJoin({ onSelectTrack }) {
                   <button
                     type="button"
                     onClick={() => onSelectTrack(track.formValue)}
-                    className="w-full inline-flex items-center justify-center gap-2 bg-[#C87549] hover:bg-[#AD5E34] text-white py-3.5 px-6 rounded-lg text-xs font-bold uppercase tracking-[0.14em] transition-all shadow-md hover:scale-[1.01] active:scale-[0.99] cursor-pointer"
+                    className="w-full inline-flex items-center justify-center gap-2 bg-[#C87549] hover:bg-[#AD5E34] text-white py-3.5 px-6 rounded-lg text-xs font-semibold uppercase tracking-[0.14em] transition-all shadow-md hover:scale-[1.01] active:scale-[0.99] cursor-pointer font-sans"
                   >
                     <span>Apply for this Pathway</span>
                     <ArrowRight size={14} />

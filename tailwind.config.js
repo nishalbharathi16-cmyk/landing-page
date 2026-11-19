@@ -32,9 +32,9 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['"Segoe UI"', '"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
-        serif: ['"Playfair Display"', 'Georgia', 'serif'],
-        mono: ['"JetBrains Mono"', 'monospace'],
+        sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        mono: ['"Plus Jakarta Sans"', 'ui-monospace', 'monospace'],
       },
       boxShadow: {
         'ms-card': '0 2px 8px rgba(0, 0, 0, 0.04), 0 0 1px rgba(0, 0, 0, 0.12)',

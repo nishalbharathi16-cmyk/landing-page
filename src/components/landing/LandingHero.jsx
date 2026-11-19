@@ -73,7 +73,7 @@ export function LandingHero({ onApplyClick }) {
               {/* Category Eyebrow */}
               <div className="flex items-center gap-3">
                 <span className="h-px w-8 bg-[#C87549]" />
-                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#D4AF37]">
+                <span className="text-xs font-sans font-semibold uppercase tracking-[0.2em] text-[#C87549]">
                   Executive Leadership &amp; Managerial Skills
                 </span>
               </div>
@@ -105,7 +105,7 @@ export function LandingHero({ onApplyClick }) {
                 <button
                   type="button"
                   onClick={onApplyClick}
-                  className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#C87549] to-[#AD5E34] hover:brightness-110 text-white px-8 py-4 text-xs font-bold uppercase tracking-[0.14em] transition-all duration-300 shadow-[0_4px_20px_rgba(200,117,73,0.35)] hover:shadow-[0_6px_25px_rgba(200,117,73,0.45)] hover:-translate-y-0.5 active:translate-y-0 cursor-pointer rounded-lg"
+                  className="inline-flex items-center justify-center gap-2 bg-[#C87549] hover:bg-[#AD5E34] text-white px-8 py-4 text-xs font-semibold uppercase tracking-[0.14em] transition-all duration-300 shadow-md hover:-translate-y-0.5 active:translate-y-0 cursor-pointer rounded-lg font-sans"
                 >
                   <span>Apply for 2026 Intake</span>
                   <ArrowRight size={14} />
@@ -114,9 +114,9 @@ export function LandingHero({ onApplyClick }) {
                 <button
                   type="button"
                   onClick={scrollToProgramme}
-                  className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 border border-white/25 hover:border-[#D4AF37]/80 text-white px-7 py-4 text-xs font-bold uppercase tracking-[0.14em] transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer rounded-lg"
+                  className="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/20 hover:border-[#C87549] text-white px-7 py-4 text-xs font-semibold uppercase tracking-[0.14em] transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer rounded-lg font-sans"
                 >
-                  <Compass size={14} className="text-[#D4AF37]" />
+                  <Compass size={14} className="text-[#C87549]" />
                   <span>Explore Programme</span>
                 </button>
               </div>
@@ -128,7 +128,7 @@ export function LandingHero({ onApplyClick }) {
             {/* Soft Ambient Warmth */}
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute -top-12 -right-12 w-80 sm:w-96 lg:w-[420px] h-80 sm:h-96 lg:h-[420px] rounded-full bg-radial from-[#C87549]/20 via-[#D4AF37]/10 to-transparent blur-3xl -z-10"
+              className="pointer-events-none absolute -top-12 -right-12 w-80 sm:w-96 lg:w-[420px] h-80 sm:h-96 lg:h-[420px] rounded-full bg-radial from-[#C87549]/20 via-transparent to-transparent blur-3xl -z-10"
             />
 
             <Reveal delay={0.15}>
@@ -153,7 +153,7 @@ export function LandingHero({ onApplyClick }) {
                 />
 
                 {/* Top Badge: Learning in Action */}
-                <div className="absolute top-5 left-5 z-20 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/85 backdrop-blur-md border border-white/20 text-white font-mono text-[11px] shadow-md">
+                <div className="absolute top-5 left-5 z-20 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/85 backdrop-blur-md border border-white/20 text-white font-sans text-[11px] shadow-md">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C87549]" />
                   <span>Learning in Action</span>
                 </div>
@@ -180,7 +180,7 @@ export function LandingHero({ onApplyClick }) {
 
       {/* Subtle Bottom Academy Ribbon */}
       <div className="relative z-30 bg-[#0B0F19] border-t border-white/15 py-3 text-center text-xs text-zinc-400">
-        <p className="font-mono text-[11px] tracking-wider uppercase">
+        <p className="font-sans text-[11px] tracking-wider uppercase">
           LAMA &bull; Leadership &amp; Managerial Skills Academy &bull; Chennai &ndash; 600040 &bull; Admissions: +91 93630 13960
         </p>
       </div>

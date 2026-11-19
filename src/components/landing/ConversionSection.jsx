@@ -138,27 +138,27 @@ export function ConversionSection({ selectedTrack }) {
             <Reveal>
               <div className="relative rounded-2xl border border-white/12 bg-[#1A1A18] p-7 sm:p-10 shadow-2xl overflow-hidden">
                 {/* Section Eyebrow & Strong Headline */}
-                <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#D4AF37]">
+                <span className="text-xs font-sans font-semibold uppercase tracking-[0.2em] text-[#C87549]">
                   Cohort Intake 2026 &bull; Priority Registration
                 </span>
                 <h2 className="mt-2.5 font-serif text-3xl sm:text-4xl font-bold leading-tight text-[#F6F2E9]">
                   Your Leadership Journey Starts Here.
                 </h2>
-                <p className="mt-3 text-xs sm:text-sm text-zinc-200 leading-relaxed font-sans">
+                <p className="mt-3 text-xs sm:text-sm text-zinc-300 leading-relaxed font-sans">
                   Complete this admissions enquiry form to register your interest for upcoming 2026 cohort intakes, receive syllabus briefing schedules, and connect with academic advisors.
                 </p>
 
                 {submittedRecord ? (
-                  <div className="mt-8 rounded-xl border border-[#D4AF37]/40 bg-white/5 p-7 sm:p-8 space-y-5 animate-in fade-in duration-300">
+                  <div className="mt-8 rounded-xl border border-[#C87549]/40 bg-white/5 p-7 sm:p-8 space-y-5 animate-in fade-in duration-300">
                     <div className="flex items-center gap-3.5">
-                      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 shadow-md">
+                      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#C87549]/20 text-[#C87549] border border-[#C87549]/40 shadow-md">
                         <Check size={24} />
                       </span>
                       <div>
                         <h4 className="font-serif text-xl sm:text-2xl font-bold text-white">
                           Admissions Enquiry Confirmed
                         </h4>
-                        <p className="text-xs text-[#D4AF37] font-mono">
+                        <p className="text-xs text-[#C87549] font-sans">
                           Priority Record Logged for: {submittedRecord.name}
                         </p>
                       </div>
@@ -459,11 +459,11 @@ export function ConversionSection({ selectedTrack }) {
                 
                 {/* 1. Programme Delivery */}
                 <div className="flex items-start gap-4">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-white/15 bg-[#F6F2E9]/10 text-[#C87549]">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-[#C87549]">
                     <Laptop size={20} />
                   </span>
                   <div>
-                    <span className="text-[11px] font-mono font-semibold uppercase tracking-[0.16em] text-[#C87549]">
+                    <span className="text-[11px] font-sans font-semibold uppercase tracking-[0.16em] text-[#C87549]">
                       Programme Delivery
                     </span>
                     <h4 className="mt-0.5 font-serif text-lg font-bold text-white">
@@ -477,11 +477,11 @@ export function ConversionSection({ selectedTrack }) {
 
                 {/* 2. Academy Location */}
                 <div className="border-t border-white/10 pt-6 flex items-start gap-4">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-white/15 bg-[#F6F2E9]/10 text-[#D4AF37]">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-[#C87549]">
                     <Building size={20} />
                   </span>
                   <div>
-                    <span className="text-[11px] font-mono font-semibold uppercase tracking-[0.16em] text-[#C87549]">
+                    <span className="text-[11px] font-sans font-semibold uppercase tracking-[0.16em] text-[#C87549]">
                       Academy Location
                     </span>
                     <h4 className="mt-0.5 font-serif text-lg font-bold text-white">
@@ -500,7 +500,7 @@ export function ConversionSection({ selectedTrack }) {
                     <span>Official admissions line:{' '}</span>
                     <a
                       href="tel:+919363013960"
-                      className="font-bold text-white hover:text-[#D4AF37] transition-colors"
+                      className="font-bold text-white hover:text-[#C87549] transition-colors font-sans"
                     >
                       +91 93630 13960
                     </a>
@@ -512,7 +512,7 @@ export function ConversionSection({ selectedTrack }) {
                     <span>Admissions &amp; Academic Desk:{' '}</span>
                     <a
                       href="mailto:drmaru@learn-lead-manage.com"
-                      className="font-bold text-white hover:text-[#D4AF37] transition-colors"
+                      className="font-bold text-white hover:text-[#C87549] transition-colors font-sans"
                     >
                       drmaru@learn-lead-manage.com
                     </a>
@@ -525,7 +525,7 @@ export function ConversionSection({ selectedTrack }) {
                     href="https://wa.me/919363013960"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center gap-2 bg-[#25D366]/15 hover:bg-[#25D366]/25 border border-[#25D366]/40 text-emerald-300 py-2.5 px-3 rounded-lg text-xs font-semibold transition-colors"
+                    className="flex-1 inline-flex items-center justify-center gap-2 bg-[#25D366]/15 hover:bg-[#25D366]/25 border border-[#25D366]/40 text-emerald-300 py-2.5 px-3 rounded-lg text-xs font-semibold transition-colors font-sans"
                   >
                     <WhatsAppIcon className="w-3.5 h-3.5 fill-current" />
                     <span>WhatsApp</span>
@@ -533,15 +533,15 @@ export function ConversionSection({ selectedTrack }) {
 
                   <a
                     href="tel:+919363013960"
-                    className="flex-1 inline-flex items-center justify-center gap-1.5 bg-white/5 hover:bg-white/10 border border-white/15 text-white py-2.5 px-3 rounded-lg text-xs font-semibold transition-colors"
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 bg-white/5 hover:bg-white/10 border border-white/15 text-white py-2.5 px-3 rounded-lg text-xs font-semibold transition-colors font-sans"
                   >
-                    <Phone size={13} className="text-[#D4AF37]" />
+                    <Phone size={13} className="text-[#C87549]" />
                     <span>Call Desk</span>
                   </a>
 
                   <a
                     href="mailto:drmaru@learn-lead-manage.com"
-                    className="flex-1 inline-flex items-center justify-center gap-1.5 bg-white/5 hover:bg-white/10 border border-white/15 text-white py-2.5 px-3 rounded-lg text-xs font-semibold transition-colors"
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 bg-white/5 hover:bg-white/10 border border-white/15 text-white py-2.5 px-3 rounded-lg text-xs font-semibold transition-colors font-sans"
                   >
                     <Mail size={13} className="text-[#C87549]" />
                     <span>Email</span>
@@ -549,8 +549,8 @@ export function ConversionSection({ selectedTrack }) {
                 </div>
 
                 {/* Verified Governance */}
-                <div className="pt-1 flex items-center gap-2 text-[11px] text-zinc-400 font-mono">
-                  <ShieldCheck size={14} className="text-[#10B981] shrink-0" />
+                <div className="pt-1 flex items-center gap-2 text-[11px] text-zinc-400 font-sans">
+                  <ShieldCheck size={14} className="text-[#C87549] shrink-0" />
                   <span>Verified Admissions Governance &bull; Zero Spam</span>
                 </div>
 

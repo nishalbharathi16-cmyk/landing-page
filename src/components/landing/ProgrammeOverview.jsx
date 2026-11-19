@@ -10,7 +10,6 @@ export function ProgrammeOverview({ onApplyClick }) {
       title: 'AI-Powered Leadership & Executive Tech Operations',
       subtitle: 'Leading tech-enabled teams & data-informed managerial decisions',
       icon: Cpu,
-      color: '#38BDF8',
       summary:
         'Equips first-time managers to evaluate AI opportunities responsibly, design human-in-the-loop team workflows, and translate technical realities into commercial boardroom impact.',
       highlights: [
@@ -20,7 +19,6 @@ export function ProgrammeOverview({ onApplyClick }) {
         { label: 'AI Governance', desc: '& Regulatory Responsibility' },
         { label: 'Technical Tradeoffs', desc: 'Framed for Executive Boardrooms' },
       ],
-      tagBg: 'bg-[#38BDF8]/15 text-[#7DD3FC] border-[#38BDF8]/30',
     },
     {
       code: 'DOMAIN 02',
@@ -28,7 +26,6 @@ export function ProgrammeOverview({ onApplyClick }) {
       title: 'Strategic Business Operations & P&L Management',
       subtitle: 'Connecting daily execution with financial health & discipline',
       icon: LineChart,
-      color: '#D4AF37',
       summary:
         'Builds commercial fluency in financial statements, departmental operating budgets, and unit economics so managerial actions protect enterprise margin and momentum.',
       highlights: [
@@ -38,7 +35,6 @@ export function ProgrammeOverview({ onApplyClick }) {
         { label: 'Supply Chain Friction', desc: '& Margin Protection' },
         { label: 'Sprint-to-OKR', desc: 'Enterprise Execution Frameworks' },
       ],
-      tagBg: 'bg-[#D4AF37]/15 text-[#F3E5AB] border-[#D4AF37]/30',
     },
     {
       code: 'DOMAIN 03',
@@ -46,7 +42,6 @@ export function ProgrammeOverview({ onApplyClick }) {
       title: 'People Management, Power Dynamics & Crisis Control',
       subtitle: 'Navigating human complexity, stakeholder tension & high stakes',
       icon: Users,
-      color: '#C87549',
       summary:
         'Prepares emerging leaders for the realities of cross-functional conflict, enterprise negotiations, organizational politics, and disciplined crisis turnaround.',
       highlights: [
@@ -56,7 +51,6 @@ export function ProgrammeOverview({ onApplyClick }) {
         { label: 'Scope Control', desc: '& Dispute Management Protocols' },
         { label: 'Crisis Turnaround', desc: '& Live Incident Command Response' },
       ],
-      tagBg: 'bg-[#C87549]/15 text-[#E59B72] border-[#C87549]/30',
     },
   ];
 
@@ -76,7 +70,7 @@ export function ProgrammeOverview({ onApplyClick }) {
             <div className="max-w-2xl">
               <div className="flex items-center gap-2.5 mb-3">
                 <span className="w-6 h-px bg-[#C87549]" />
-                <span className="text-xs font-mono font-semibold uppercase tracking-[0.2em] text-[#D4AF37]">
+                <span className="text-xs font-sans font-semibold uppercase tracking-[0.2em] text-[#C87549]">
                   Curriculum Architecture &bull; 3 Domains
                 </span>
               </div>
@@ -86,7 +80,7 @@ export function ProgrammeOverview({ onApplyClick }) {
                   The Practical Managerial Framework.
                 </span>
               </h2>
-              <p className="mt-3.5 text-base sm:text-lg leading-relaxed text-zinc-200 font-sans">
+              <p className="mt-3.5 text-base sm:text-lg leading-relaxed text-zinc-300 font-sans">
                 Replacing abstract theoretical course catalogs with three practical executive domains focused on technology operations, direct P&amp;L ownership, and high-trust people management.
               </p>
             </div>
@@ -94,7 +88,7 @@ export function ProgrammeOverview({ onApplyClick }) {
             <button
               type="button"
               onClick={onApplyClick}
-              className="inline-flex items-center gap-2 bg-[#C87549] hover:bg-[#AD5E34] text-white px-6 py-3.5 text-xs font-bold uppercase tracking-[0.14em] transition-all rounded-lg shrink-0 self-start md:self-auto shadow-md hover:scale-105 active:scale-95 cursor-pointer"
+              className="inline-flex items-center gap-2 bg-[#C87549] hover:bg-[#AD5E34] text-white px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.14em] transition-all rounded-lg shrink-0 self-start md:self-auto shadow-md hover:scale-105 active:scale-95 cursor-pointer font-sans"
             >
               <span>Enquire for Curriculum</span>
               <ArrowRight size={14} />
@@ -109,54 +103,50 @@ export function ProgrammeOverview({ onApplyClick }) {
             return (
               <Reveal key={domain.code} delay={idx * 0.08}>
                 <div
-                  className="group relative flex h-full flex-col justify-between rounded-xl border border-white/12 bg-[#1A1A18] p-7 sm:p-9 transition-all duration-300 hover:-translate-y-1 hover:border-white/25 shadow-lg overflow-hidden"
+                  className="group relative flex h-full flex-col justify-between rounded-xl border border-white/10 bg-[#191918] p-7 sm:p-9 transition-all duration-300 hover:-translate-y-1 hover:border-[#C87549]/40 shadow-lg overflow-hidden"
                 >
                   {/* Subtle Top Accent Hairline */}
                   <div
                     aria-hidden="true"
-                    className="absolute top-0 inset-x-0 h-0.5 opacity-60 group-hover:opacity-100 transition-opacity"
-                    style={{
-                      background: domain.color,
-                    }}
+                    className="absolute top-0 inset-x-0 h-0.5 bg-[#C87549]/40 group-hover:bg-[#C87549] transition-colors"
                   />
 
                   <div>
                     {/* Header: Code & Icon */}
                     <div className="flex items-center justify-between border-b border-white/10 pb-4">
-                      <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-mono font-bold uppercase tracking-wider border ${domain.tagBg}`}>
-                        <span>{domain.code}</span>
-                        <span>&bull;</span>
+                      <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-sans font-medium uppercase tracking-wider border border-white/10 bg-white/[0.04] text-stone-200">
+                        <span className="text-[#C87549] font-bold">{domain.code}</span>
+                        <span className="text-white/30">&bull;</span>
                         <span>{domain.badge}</span>
                       </span>
 
                       <div
-                        className="w-10 h-10 rounded-full flex items-center justify-center border border-white/15 bg-white/5 transition-transform duration-300 group-hover:scale-110"
-                        style={{ color: domain.color, backgroundColor: `${domain.color}10` }}
+                        className="w-10 h-10 rounded-lg flex items-center justify-center border border-white/10 bg-white/5 text-[#C87549] transition-transform duration-300 group-hover:scale-105 group-hover:bg-[#C87549]/10"
                       >
                         <Icon size={18} />
                       </div>
                     </div>
 
                     {/* Domain Title */}
-                    <h3 className="mt-6 font-serif text-xl sm:text-2xl font-bold text-white leading-snug group-hover:text-[#F3E5AB] transition-colors">
+                    <h3 className="mt-6 font-serif text-xl sm:text-2xl font-bold text-[#F6F2E9] leading-snug group-hover:text-white transition-colors">
                       {domain.title}
                     </h3>
                     
-                    <p className="mt-2 text-xs font-mono text-[#D4AF37] tracking-wide">
+                    <p className="mt-2 text-xs font-sans text-stone-400 tracking-wide font-medium">
                       {domain.subtitle}
                     </p>
 
-                    <p className="mt-3.5 text-xs sm:text-sm leading-relaxed text-zinc-200 font-sans">
+                    <p className="mt-3.5 text-xs sm:text-sm leading-relaxed text-zinc-300 font-sans">
                       {domain.summary}
                     </p>
 
                     {/* Key Topics Checklist */}
-                    <ul className="mt-6 space-y-3 border-t border-white/10 pt-5 text-xs text-zinc-100">
+                    <ul className="mt-6 space-y-3 border-t border-white/10 pt-5 text-xs text-zinc-200">
                       {domain.highlights.map((h) => (
                         <li key={h.label} className="flex items-start gap-2.5">
-                          <Check size={14} className="shrink-0 mt-0.5" style={{ color: domain.color }} />
-                          <span className="leading-relaxed">
-                            <strong className="text-white font-semibold">{h.label}</strong> {h.desc}
+                          <Check size={14} className="shrink-0 mt-0.5 text-[#C87549]" />
+                          <span className="leading-relaxed font-sans">
+                            <strong className="text-white font-medium">{h.label}</strong> {h.desc}
                           </span>
                         </li>
                       ))}

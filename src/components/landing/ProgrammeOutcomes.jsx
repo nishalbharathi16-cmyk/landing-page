@@ -15,7 +15,6 @@ export function ProgrammeOutcomes({ onApplyClick }) {
         { label: 'Psychological Safety', desc: 'maintained alongside rigorous operational execution' },
         { label: 'Quarterly OKRs', desc: 'mobilizing cross-functional peers to shared delivery' },
       ],
-      color: '#C87549',
     },
     {
       icon: BarChart3,
@@ -28,7 +27,6 @@ export function ProgrammeOutcomes({ onApplyClick }) {
         { label: 'Incomplete Data Framing', desc: 'decisive choices under competing deadlines' },
         { label: 'Resource Allocation', desc: 'commercial ROI defense to executive sponsors' },
       ],
-      color: '#D4AF37',
     },
     {
       icon: MessageSquare,
@@ -41,7 +39,6 @@ export function ProgrammeOutcomes({ onApplyClick }) {
         { label: 'Principled Negotiation', desc: 'enterprise client contracts & scope control' },
         { label: 'Constructive Feedback', desc: 'delivering clarity across organizational lines' },
       ],
-      color: '#38BDF8',
     },
     {
       icon: ShieldCheck,
@@ -54,7 +51,6 @@ export function ProgrammeOutcomes({ onApplyClick }) {
         { label: 'Root-Cause Analyses', desc: '& executive external communication protocols' },
         { label: 'Responsible AI Workflows', desc: 'governance guardrails for modern teams' },
       ],
-      color: '#10B981',
     },
   ];
 
@@ -74,7 +70,7 @@ export function ProgrammeOutcomes({ onApplyClick }) {
             <div className="max-w-2xl">
               <div className="flex items-center gap-2.5 mb-3">
                 <span className="w-6 h-px bg-[#C87549]" />
-                <span className="text-xs font-mono font-semibold uppercase tracking-[0.2em] text-[#D4AF37]">
+                <span className="text-xs font-sans font-semibold uppercase tracking-[0.2em] text-[#C87549]">
                   Executive Competencies
                 </span>
               </div>
@@ -84,7 +80,7 @@ export function ProgrammeOutcomes({ onApplyClick }) {
                   Measurable Executive Capabilities.
                 </span>
               </h2>
-              <p className="mt-3.5 text-base sm:text-lg leading-relaxed text-zinc-200 font-sans">
+              <p className="mt-3.5 text-base sm:text-lg leading-relaxed text-zinc-300 font-sans">
                 LAMA builds durable managerial judgement, commercial acumen, and operational composure—preparing graduates to contribute with confidence in their first leadership roles.
               </p>
             </div>
@@ -92,7 +88,7 @@ export function ProgrammeOutcomes({ onApplyClick }) {
             <button
               type="button"
               onClick={onApplyClick}
-              className="inline-flex items-center gap-2 bg-[#C87549] hover:bg-[#AD5E34] text-white px-6 py-3.5 text-xs font-bold uppercase tracking-[0.14em] transition-all rounded-lg shrink-0 self-start md:self-auto shadow-md hover:scale-105 active:scale-95 cursor-pointer"
+              className="inline-flex items-center gap-2 bg-[#C87549] hover:bg-[#AD5E34] text-white px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.14em] transition-all rounded-lg shrink-0 self-start md:self-auto shadow-md hover:scale-105 active:scale-95 cursor-pointer font-sans"
             >
               <span>Apply for 2026 Intake</span>
               <ArrowRight size={14} />
@@ -107,23 +103,22 @@ export function ProgrammeOutcomes({ onApplyClick }) {
             return (
               <Reveal key={item.title} delay={idx * 0.08}>
                 <div
-                  className="group relative flex h-full flex-col justify-between rounded-xl border border-white/12 bg-[#1A1A18] p-7 sm:p-9 transition-all duration-300 hover:-translate-y-1 hover:border-white/25 shadow-lg"
+                  className="group relative flex h-full flex-col justify-between rounded-xl border border-white/10 bg-[#191918] p-7 sm:p-9 transition-all duration-300 hover:-translate-y-1 hover:border-[#C87549]/40 shadow-lg"
                 >
                   <div>
                     {/* Header */}
                     <div className="flex items-center justify-between border-b border-white/10 pb-4">
                       <div className="flex items-center gap-3">
                         <div
-                          className="w-10 h-10 rounded-lg flex items-center justify-center border border-white/12 bg-white/5 transition-transform duration-300 group-hover:scale-105"
-                          style={{ color: item.color }}
+                          className="w-10 h-10 rounded-lg flex items-center justify-center border border-white/10 bg-white/5 text-[#C87549] transition-transform duration-300 group-hover:scale-105 group-hover:bg-[#C87549]/10"
                         >
                           <Icon size={18} />
                         </div>
                         <div>
-                          <span className="font-mono text-[10px] uppercase font-bold text-[#D4AF37] tracking-wider">
+                          <span className="font-sans text-[11px] uppercase font-bold text-[#C87549] tracking-wider">
                             {item.category}
                           </span>
-                          <h3 className="font-serif text-lg sm:text-xl font-bold text-white group-hover:text-[#F3E5AB] transition-colors">
+                          <h3 className="font-serif text-lg sm:text-xl font-bold text-[#F6F2E9] group-hover:text-white transition-colors">
                             {item.title}
                           </h3>
                         </div>
@@ -131,17 +126,17 @@ export function ProgrammeOutcomes({ onApplyClick }) {
                     </div>
 
                     {/* Summary */}
-                    <p className="mt-4 text-xs sm:text-sm text-zinc-200 leading-relaxed font-sans">
+                    <p className="mt-4 text-xs sm:text-sm text-zinc-300 leading-relaxed font-sans">
                       {item.summary}
                     </p>
 
                     {/* Skills Checklist with High-Contrast Bold Highlights */}
-                    <ul className="mt-5 space-y-3 border-t border-white/10 pt-4 text-xs text-zinc-100">
+                    <ul className="mt-5 space-y-3 border-t border-white/10 pt-4 text-xs text-zinc-200">
                       {item.skills.map((s) => (
                         <li key={s.label} className="flex items-start gap-2.5">
-                          <Check size={14} className="shrink-0 mt-0.5" style={{ color: item.color }} />
-                          <span className="leading-relaxed">
-                            <strong className="text-white font-semibold">{s.label}:</strong> {s.desc}
+                          <Check size={14} className="shrink-0 mt-0.5 text-[#C87549]" />
+                          <span className="leading-relaxed font-sans">
+                            <strong className="text-white font-medium">{s.label}:</strong> {s.desc}
                           </span>
                         </li>
                       ))}

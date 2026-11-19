@@ -15,7 +15,6 @@ export function LearningExperience({ onApplyClick }) {
         'Live 4-hour facilitated business crises where cohorts respond to service outages, supply chain bottlenecks, and PR emergencies using real-time dashboard data in cross-functional roles.',
       highlight: 'Live 4-Hour Facilitation',
       isPrimary: true,
-      color: '#C87549',
     },
     {
       letter: 'B',
@@ -26,7 +25,6 @@ export function LearningExperience({ onApplyClick }) {
         'Personalised feedback on presentation clarity, executive speech synthesis, and structured negotiation to refine boardroom delivery (opt-in & consent-based).',
       highlight: 'Decision Augmentation',
       isPrimary: false,
-      color: '#38BDF8',
     },
     {
       letter: 'C',
@@ -37,7 +35,6 @@ export function LearningExperience({ onApplyClick }) {
         'Hands-on enterprise operational briefs tackling real unit economics, team allocation, and cross-functional friction resolution under corporate constraints.',
       highlight: 'Applied Commercial Briefs',
       isPrimary: false,
-      color: '#D4AF37',
     },
     {
       letter: 'D',
@@ -48,7 +45,6 @@ export function LearningExperience({ onApplyClick }) {
         'Structured case analyses, interactive stakeholder role-playing, and collaborative cohort debriefs turning abstract leadership concepts into instinct.',
       highlight: 'Active Peer Dynamics',
       isPrimary: false,
-      color: '#10B981',
     },
   ];
 
@@ -92,7 +88,7 @@ export function LearningExperience({ onApplyClick }) {
             <div className="max-w-2xl">
               <div className="flex items-center gap-2.5 mb-3">
                 <span className="w-6 h-px bg-[#C87549]" />
-                <span className="text-xs font-mono font-semibold uppercase tracking-[0.2em] text-[#D4AF37]">
+                <span className="text-xs font-sans font-semibold uppercase tracking-[0.2em] text-[#C87549]">
                   Experiential Pedagogy &bull; Four Pillars
                 </span>
               </div>
@@ -102,7 +98,7 @@ export function LearningExperience({ onApplyClick }) {
                   Beyond the Lecture Hall.
                 </span>
               </h2>
-              <p className="mt-3.5 text-base sm:text-lg leading-relaxed text-zinc-200 font-sans">
+              <p className="mt-3.5 text-base sm:text-lg leading-relaxed text-zinc-300 font-sans">
                 Delivered through four complementary learning pillars designed to build managerial instinct, decisive composure, and cross-functional leadership under corporate conditions.
               </p>
             </div>
@@ -110,7 +106,7 @@ export function LearningExperience({ onApplyClick }) {
             <button
               type="button"
               onClick={onApplyClick}
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] hover:brightness-110 text-[#171716] px-6 py-3.5 text-xs font-bold uppercase tracking-[0.14em] transition-all rounded-lg shrink-0 self-start md:self-auto shadow-md hover:scale-105 active:scale-95 cursor-pointer"
+              className="inline-flex items-center gap-2 bg-[#C87549] hover:bg-[#AD5E34] text-white px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.14em] transition-all rounded-lg shrink-0 self-start md:self-auto shadow-md hover:scale-105 active:scale-95 cursor-pointer font-sans"
             >
               <span>Enquire for Cohort Access</span>
               <ArrowRight size={14} />
@@ -125,41 +121,34 @@ export function LearningExperience({ onApplyClick }) {
             return (
               <Reveal key={pillar.letter} delay={idx * 0.06}>
                 <div
-                  className={`group relative flex h-full flex-col justify-between rounded-xl border bg-[#1A1A18] p-7 transition-all duration-300 hover:-translate-y-1 ${
+                  className={`group relative flex h-full flex-col justify-between rounded-xl border bg-[#191918] p-7 transition-all duration-300 hover:-translate-y-1 ${
                     pillar.isPrimary
                       ? 'border-[#C87549]/50 shadow-md'
-                      : 'border-white/12 hover:border-white/25'
+                      : 'border-white/10 hover:border-[#C87549]/40'
                   }`}
                 >
                   <div>
                     {/* Header */}
                     <div className="flex items-center justify-between border-b border-white/10 pb-4">
-                      <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/10 border border-white/15 font-serif text-sm font-bold text-white shadow-xs">
+                      <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 border border-white/10 font-serif text-sm font-bold text-[#F6F2E9] shadow-xs">
                         {pillar.letter}
                       </span>
-                      <span
-                        className="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full border"
-                        style={{
-                          color: pillar.color,
-                          borderColor: `${pillar.color}40`,
-                          backgroundColor: `${pillar.color}15`,
-                        }}
-                      >
+                      <span className="text-[10px] font-sans font-medium uppercase tracking-wider px-2.5 py-0.5 rounded-full border border-white/10 bg-white/[0.04] text-stone-300">
                         {pillar.tag}
                       </span>
                     </div>
 
-                    <h3 className="mt-5 font-serif text-xl font-bold text-white group-hover:text-[#F3E5AB] transition-colors">
+                    <h3 className="mt-5 font-serif text-xl font-bold text-[#F6F2E9] group-hover:text-white transition-colors">
                       {pillar.title}
                     </h3>
-                    <p className="mt-3 text-xs leading-relaxed text-zinc-200 font-sans">
+                    <p className="mt-3 text-xs leading-relaxed text-zinc-300 font-sans">
                       {pillar.description}
                     </p>
                   </div>
 
-                  <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-zinc-300">
+                  <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-[11px] font-sans text-stone-300">
                     <span className="font-medium text-white">{pillar.highlight}</span>
-                    <Icon size={16} style={{ color: pillar.color }} />
+                    <Icon size={16} className="text-[#C87549]" />
                   </div>
                 </div>
               </Reveal>
@@ -171,10 +160,10 @@ export function LearningExperience({ onApplyClick }) {
         <Reveal delay={0.1}>
           <div className="mt-14 max-w-4xl mx-auto">
             <div className="text-center mb-6">
-              <span className="text-[10px] font-mono uppercase font-bold text-[#D4AF37] tracking-[0.18em]">
+              <span className="text-[10px] font-sans uppercase font-semibold text-[#C87549] tracking-[0.18em]">
                 Authentic Video Briefing
               </span>
-              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white mt-1">
+              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#F6F2E9] mt-1">
                 Executive Simulation in Action
               </h3>
             </div>
@@ -193,7 +182,7 @@ export function LearningExperience({ onApplyClick }) {
         <div className="mt-14 grid grid-cols-1 gap-7 md:grid-cols-3">
           {photos.map((item, pIdx) => (
             <Reveal key={item.title} delay={pIdx * 0.08}>
-              <div className="group relative flex h-full flex-col justify-between rounded-xl border border-white/12 bg-[#1A1A18] p-3 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-white/25 overflow-hidden">
+              <div className="group relative flex h-full flex-col justify-between rounded-xl border border-white/10 bg-[#191918] p-3 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-[#C87549]/40 overflow-hidden">
                 <div>
                   {/* Photo with Smooth Hover Scale and Uniform Aspect Ratio */}
                   <div className="overflow-hidden rounded-lg border border-white/10">
@@ -208,13 +197,13 @@ export function LearningExperience({ onApplyClick }) {
                   </div>
 
                   <div className="p-3.5">
-                    <span className="text-[10px] font-mono uppercase font-bold tracking-wider text-[#C87549]">
+                    <span className="text-[10px] font-sans uppercase font-bold tracking-wider text-[#C87549]">
                       {item.category}
                     </span>
-                    <h4 className="mt-1 font-serif text-base font-bold text-white group-hover:text-[#D4AF37] transition-colors">
+                    <h4 className="mt-1 font-serif text-base font-bold text-[#F6F2E9] group-hover:text-white transition-colors">
                       {item.title}
                     </h4>
-                    <p className="mt-1.5 text-xs text-zinc-200 leading-relaxed font-sans">
+                    <p className="mt-1.5 text-xs text-zinc-300 leading-relaxed font-sans">
                       {item.caption}
                     </p>
                   </div>

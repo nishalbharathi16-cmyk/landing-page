@@ -39,28 +39,24 @@ export function CurriculumSection({ activeDomainId, setActiveDomainId }) {
       courses: 'Courses 01 & 02',
       title: 'Foundational Self & Team Leadership',
       focus: 'Leadership styles, building trust, emotional intelligence, and self-regulation under pressure.',
-      badgeColor: '#38BDF8',
     },
     {
       phase: 'STAGE 02',
       courses: 'Courses 03 & 04',
       title: 'People Dynamics & Conflict Resolution',
       focus: 'High-performing team design, strategic delegation, and turning workplace friction into collaboration.',
-      badgeColor: '#D4AF37',
     },
     {
       phase: 'STAGE 03',
       courses: 'Courses 05 & 06',
       title: 'Operational Agility & Change Management',
       focus: 'Root-cause problem solving, agile execution rhythms, and guiding teams through corporate transitions.',
-      badgeColor: '#C87549',
     },
     {
       phase: 'STAGE 04',
       courses: 'Courses 07 & 08',
       title: 'High-Stakes Negotiation & Boardroom Presence',
       focus: 'Principled enterprise negotiation, contract scope control, and persuasive executive presentation.',
-      badgeColor: '#10B981',
     },
   ];
 
@@ -78,7 +74,7 @@ export function CurriculumSection({ activeDomainId, setActiveDomainId }) {
             <div className="max-w-2xl">
               <div className="flex items-center gap-2.5 mb-3">
                 <span className="w-6 h-px bg-[#C87549]" />
-                <span className="text-xs font-mono font-semibold uppercase tracking-[0.2em] text-[#D4AF37]">
+                <span className="text-xs font-sans font-semibold uppercase tracking-[0.2em] text-[#C87549]">
                   Comprehensive Curriculum Framework
                 </span>
               </div>
@@ -88,7 +84,7 @@ export function CurriculumSection({ activeDomainId, setActiveDomainId }) {
                   Modern First-Time Managers Need.
                 </span>
               </h2>
-              <p className="mt-3.5 text-base sm:text-lg leading-relaxed text-zinc-200 font-sans">
+              <p className="mt-3.5 text-base sm:text-lg leading-relaxed text-zinc-300 font-sans">
                 A structured curriculum comprising eight core leadership courses alongside three integrated executive practice domains uniting AI-powered operational leadership, financial and Profit &amp; Loss (P&amp;L) fluency, and high-trust people management.
               </p>
             </div>
@@ -145,15 +141,15 @@ export function CurriculumSection({ activeDomainId, setActiveDomainId }) {
               <div className="mt-10 p-5 sm:p-7 rounded-xl border border-white/15 bg-black/45 backdrop-blur-xl">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-5 border-b border-white/10">
                   <div>
-                    <span className="text-[10px] font-mono uppercase font-bold text-[#D4AF37] tracking-[0.16em]">
+                    <span className="text-[10px] font-sans uppercase font-semibold text-[#C87549] tracking-[0.16em]">
                       Learning Journey &bull; 4 Strategic Milestones
                     </span>
                     <h4 className="font-serif text-lg sm:text-xl font-bold text-white mt-1">
                       The Managerial Competency Arc
                     </h4>
                   </div>
-                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/15 text-[11px] font-mono text-[#D4AF37]">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]" />
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] font-sans text-stone-300">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#C87549]" />
                     <span>Progressive Capability Build</span>
                   </div>
                 </div>
@@ -163,24 +159,17 @@ export function CurriculumSection({ activeDomainId, setActiveDomainId }) {
                   {progressionStages.map((stage) => (
                     <div
                       key={stage.phase}
-                      className="relative p-4 rounded-lg border border-white/10 bg-white/5 hover:border-[#D4AF37]/50 hover:bg-white/10 transition-all duration-300 group"
+                      className="relative p-4 rounded-lg border border-white/10 bg-[#161614] hover:border-[#C87549]/50 transition-all duration-300 group"
                     >
                       <div className="flex items-center justify-between mb-2">
-                        <span
-                          className="font-mono text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-sm border"
-                          style={{
-                            color: stage.badgeColor,
-                            borderColor: `${stage.badgeColor}40`,
-                            backgroundColor: `${stage.badgeColor}12`,
-                          }}
-                        >
+                        <span className="font-sans text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-sm border border-white/10 bg-white/[0.04] text-[#C87549]">
                           {stage.phase}
                         </span>
-                        <span className="font-mono text-[10px] text-zinc-400">
+                        <span className="font-sans text-[10px] text-zinc-400 font-medium">
                           {stage.courses}
                         </span>
                       </div>
-                      <h5 className="font-serif text-sm font-bold text-white group-hover:text-[#F3E5AB] transition-colors">
+                      <h5 className="font-serif text-sm font-bold text-[#F6F2E9] group-hover:text-white transition-colors">
                         {stage.title}
                       </h5>
                       <p className="mt-1.5 text-xs text-zinc-300 font-sans leading-relaxed">
@@ -196,21 +185,21 @@ export function CurriculumSection({ activeDomainId, setActiveDomainId }) {
             <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
               {CORE_LEADERSHIP_COURSES.map((course, idx) => (
                 <Reveal key={course.id} delay={idx * 0.04}>
-                  <div className="group relative flex h-full flex-col justify-between rounded-xl border border-white/12 bg-[#1A1A18] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-white/25 shadow-lg">
+                  <div className="group relative flex h-full flex-col justify-between rounded-xl border border-white/10 bg-[#191918] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#C87549]/40 shadow-lg">
                     <div>
                       <div className="flex items-center justify-between border-b border-white/10 pb-3">
-                        <span className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-[#C87549]">
+                        <span className="font-sans text-xs font-bold uppercase tracking-[0.16em] text-[#C87549]">
                           COURSE {course.number}
                         </span>
-                        <span className="text-[11px] font-mono uppercase tracking-[0.12em] text-[#D4AF37]">
+                        <span className="text-[11px] font-sans uppercase tracking-[0.12em] text-stone-400 font-medium">
                           Foundational Leadership
                         </span>
                       </div>
 
-                      <h3 className="mt-4 font-serif text-xl sm:text-2xl font-bold text-white group-hover:text-[#F3E5AB] transition-colors">
+                      <h3 className="mt-4 font-serif text-xl sm:text-2xl font-bold text-[#F6F2E9] group-hover:text-white transition-colors">
                         {course.title}
                       </h3>
-                      <p className="mt-3 text-xs sm:text-sm leading-relaxed text-zinc-200 font-sans">
+                      <p className="mt-3 text-xs sm:text-sm leading-relaxed text-zinc-300 font-sans">
                         {course.description}
                       </p>
                     </div>
@@ -245,15 +234,15 @@ export function CurriculumSection({ activeDomainId, setActiveDomainId }) {
                       className="flex w-full items-start justify-between gap-4 p-6 text-left sm:items-center sm:p-8 cursor-pointer"
                     >
                       <div className="flex items-start gap-4 sm:items-center sm:gap-6">
-                        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-white/15 bg-white/5 text-[#D4AF37]">
+                        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-[#C87549]">
                           <DomainIcon className="h-5 w-5" aria-hidden="true" />
                         </span>
                         <div>
                           <div className="flex flex-wrap items-center gap-2.5">
-                            <span className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-[#C87549]">
+                            <span className="font-sans text-xs font-bold uppercase tracking-[0.16em] text-[#C87549]">
                               {domain.code}
                             </span>
-                            <span className="text-xs text-zinc-400 font-mono">
+                            <span className="text-xs text-zinc-400 font-sans">
                               &bull; {domain.topics.length} Practical Modules
                             </span>
                           </div>
@@ -267,7 +256,7 @@ export function CurriculumSection({ activeDomainId, setActiveDomainId }) {
                       </div>
 
                       <div className="flex items-center gap-2 shrink-0">
-                        <span className="hidden sm:inline text-xs font-semibold uppercase tracking-wider text-[#D4AF37]">
+                        <span className="hidden sm:inline text-xs font-semibold uppercase tracking-wider text-[#C87549]">
                           {isOpen ? 'Close' : 'Explore'}
                         </span>
                         <ChevronDown
@@ -290,7 +279,7 @@ export function CurriculumSection({ activeDomainId, setActiveDomainId }) {
                           {domain.topics.map((topic, tIdx) => (
                             <div
                               key={tIdx}
-                              className="rounded-lg border border-white/10 bg-white/5 p-5 transition-colors hover:border-[#D4AF37]/50"
+                              className="rounded-lg border border-white/10 bg-white/5 p-5 transition-colors hover:border-[#C87549]/50"
                             >
                               <div className="flex items-center gap-2 mb-2">
                                 <span className="h-1.5 w-1.5 rounded-full bg-[#C87549]" />

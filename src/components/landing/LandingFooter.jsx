@@ -62,14 +62,14 @@ export function LandingFooter() {
             </div>
 
             {/* Quick Section Shortcuts */}
-            <div className="pt-2 flex flex-wrap items-center gap-3 font-mono text-[11px] text-zinc-400">
-              <a href="#why-lama" className="hover:text-[#D4AF37] transition-colors">About</a>
+            <div className="pt-2 flex flex-wrap items-center gap-3 font-sans text-[11px] text-zinc-400">
+              <a href="#why-lama" className="hover:text-[#C87549] transition-colors">About</a>
               <span>&bull;</span>
-              <a href="#programme" className="hover:text-[#D4AF37] transition-colors">Programme</a>
+              <a href="#programme" className="hover:text-[#C87549] transition-colors">Programme</a>
               <span>&bull;</span>
-              <a href="#curriculum" className="hover:text-[#D4AF37] transition-colors">Curriculum</a>
+              <a href="#curriculum" className="hover:text-[#C87549] transition-colors">Curriculum</a>
               <span>&bull;</span>
-              <a href="#experience" className="hover:text-[#D4AF37] transition-colors">Experience</a>
+              <a href="#experience" className="hover:text-[#C87549] transition-colors">Experience</a>
               <span>&bull;</span>
               <a href="#apply" className="hover:text-[#C87549] font-bold transition-colors">Apply</a>
             </div>
